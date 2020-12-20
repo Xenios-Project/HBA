@@ -87,46 +87,46 @@
                     <!-- 2 column grid layout with text inputs for the first and last names -->
                     <label for="inputsurnmae" class="col col-form-label"> Στοιχεία</label>
                     <div class="form-outline mb-4">
-                        <input type="text" id="company" class="form-control" placeholder="Επωνυμία" />
+                        <input type="text" id="company" class="form-control" placeholder="Επωνυμία" required/>
                     </div>
                     <div class="form-outline mb-4">
-                        <input type="text" id="legalrep" class="form-control" placeholder="Νομικός Εκπρόσωπος" />
+                        <input type="text" id="legalrep" class="form-control" placeholder="Νομικός Εκπρόσωπος" required/>
                     </div>
                     <div class="form-outline mb-4">
-                        <input type="text" id="afm" class="form-control" placeholder="Α.Φ.Μ / Δ.Ο.Υ" />
+                        <input type="text" id="afm" class="form-control" placeholder="Α.Φ.Μ / Δ.Ο.Υ" required/>
                     </div>
                     <label for="inputaddressstreet" class="col col-form-label">Έδρα</label>
                     <div class="row mb-4">
                         <div class="col">
                             <div class="form-outline">
-                                <input type="text" id="street" class="form-control" placeholder="Οδός" />
+                                <input type="text" id="street" class="form-control" placeholder="Οδός" required/>
                             </div>
                         </div>
                         <div class="col-sm-4">
                             <div class="form-outline">
-                                <input type="text" id="streetno" class="form-control" placeholder="Αριθμός" />
+                                <input type="text" id="streetno" class="form-control" placeholder="Αριθμός" required/>
                             </div>
                         </div>
                     </div>
                     <div class="row mb-4">
                         <div class="col">
                             <div class="form-outline">
-                                <input type="text" id="city" class="form-control" placeholder="Πόλη" />
+                                <input type="text" id="city" class="form-control" placeholder="Πόλη" required/>
                             </div>
                         </div>
                         <div class="col-sm-4">
                             <div class="form-outline">
-                                <input type="text" id="postalcode" class="form-control" placeholder="Τ.Κ." />
+                                <input type="text" id="postalcode" class="form-control" placeholder="Τ.Κ." required/>
                             </div>
                         </div>
                     </div>
                     <label for="inputsurnmae" class="col col-form-label"> Στοιχεία Επικοινωνίας</label>
                     <!-- Email input -->
                     <div class="form-outline mb-4">
-                        <input type="email" id="email" class="form-control" placeholder="Διεύθηνση e-mail" />
+                        <input type="email" id="email" class="form-control" placeholder="Διεύθηνση e-mail" required/>
                     </div>
                     <div class="form-outline mb-4">
-                        <input type="text" id="telephone" class="form-control" placeholder="Τηλέφωνο Επικοινωνίας" />
+                        <input type="text" id="telephone" class="form-control" placeholder="Τηλέφωνο Επικοινωνίας" required/>
                     </div>
                     <p>
                         <small class="text-muted">
@@ -145,7 +145,7 @@
                     <br>
                     <p>
                         Ημερομηνία:
-                        <input type="date" value="<?php echo date('Y-m-d'); ?>" />
+                        <input type="date" value="<?php echo date('Y-m-d'); ?>" required/>
                     </p>
                     <p>
                         <div class="container">
@@ -160,10 +160,10 @@
                     </p>
                     <br>
                     <div class="form-outline mb-4">
-                        <input type="text" id="inputsignature" class="form-control" placeholder="Υπογραφή (Πλήρες Ονοματεπώνημο)" />
+                        <input type="text" id="inputsignature" class="form-control" placeholder="Υπογραφή (Πλήρες Ονοματεπώνημο)" required/>
                     </div>
                     <!-- Submit button -->
-                    <button type="submit" class="btn btn-primary btn-block mb-4">Αποστολή Αίτησεως</button>
+                    <button type="submit" class="btn-submit-form">Αποστολή Αίτησεως</button>
 
         </section>
         <!-- End Members Section -->

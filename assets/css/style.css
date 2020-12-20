@@ -558,8 +558,9 @@ section {
 }
 
 .btn-download:hover {
-    background: transparent;
-    border-color: #fff;
+    background: #C62828;
+    border-color: #C62828;
+    color: #fff;
 }
 
 
@@ -2299,4 +2300,23 @@ section {
 
 /* Aitisi */
 
-.aitisi-heading {}
+.btn-submit-form {
+    font-family: "Raleway", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 10px 30px;
+    border-radius: 4px;
+    transition: 0.5s;
+    margin-top: 10px;
+    color: #fff;
+    background: #e03a3c;
+    border: 2px solid #e03a3c;
+}
+
+.btn-submit-form:hover {
+    background: #C62828;
+    border-color: #C62828;
+    color: #fff;
+}

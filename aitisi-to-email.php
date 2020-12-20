@@ -22,7 +22,6 @@ $postalcode = "";
 $telephone = "";
 $visitor_email = "";
 
-
 $name = validate($_POST['name'])  ?? '';
 $lastname = validate($_POST['lastname'])  ?? '';
 $fathersname = validate($_POST['fathersname'])  ?? '';
