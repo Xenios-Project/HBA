@@ -157,9 +157,9 @@ h6 {
     position: relative;
     color: #111111;
     transition: 0.3s;
-    font-size: 15px;
+    font-size: 15.5px;
     font-weight: 600;
-    font-family: "Raleway", sans-serif;
+    /* font-family: "Raleway", sans-serif; */
 }
 
 .nav-menu a:hover,
@@ -419,8 +419,12 @@ h6 {
     background-color: #01579B;
 }
 
-.entry-img {
+.entry-img-latest {
     background-color: #01579B;
+}
+
+.entry-img {
+    background-color: #757575
 }
 
 .ds-blog-img {
@@ -536,6 +540,26 @@ section {
     left: 0;
     right: 0;
     transform: skewY(-3deg);
+}
+
+.btn-download {
+    font-family: "Raleway", sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 10px 30px;
+    border-radius: 4px;
+    transition: 0.5s;
+    margin-top: 30px;
+    color: #fff;
+    background: #e03a3c;
+    border: 2px solid #e03a3c;
+}
+
+.btn-download:hover {
+    background: transparent;
+    border-color: #fff;
 }
 
 
@@ -1591,7 +1615,7 @@ section {
 
 .blog .entry .entry-img {
     max-height: 400px;
-    margin: -30px -30px 20px -30px;
+    /* margin: -30px -30px 20px -30px; */
     overflow: hidden;
 }
 
@@ -1599,7 +1623,7 @@ section {
     font-size: 28px;
     font-weight: bold;
     padding: 0;
-    margin: 0 0 20px 0;
+    margin: 13px 0 20px 0;
 }
 
 .blog .entry .entry-title a {
@@ -2271,3 +2295,8 @@ section {
 .padded-list {
     padding-bottom: 1rem;
 }
+
+
+/* Aitisi */
+
+.aitisi-heading {}
