@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -52,7 +53,7 @@
 
             <nav class="nav-menu d-none d-lg-block">
                 <ul>
-                    <li class="index.html"><a href="#header">Home</a></li>
+                    <li><a href="index.html#header">Home</a></li>
                     <li><a href="index.html#about">About</a></li>
                     <li><a href="index.html#Members">Μέλη</a></li>
                     <li><a href="index.html#New-Member">Εγγραφή</a></li>
@@ -62,7 +63,7 @@
             </nav>
             <!-- .nav-menu -->
 
-            <a href="#contact" class="get-started-btn scrollto">Contact</a>
+            <a href="index.html#contact" class="get-started-btn scrollto">Contact</a>
         </div>
     </header>
     <!-- End Header -->
@@ -83,66 +84,66 @@
                 </div>
                 <p>Κύριες και Κύριοι,</p>
                 <p> Σας παρακαλώ να με εγγράψετε ως μέλος του σωματείου με την επωνυμία «ΠΑΝΕΛΛΗΝΙΟΣ ΣΥΛΛΟΓΟΣ BLOCKCHAIN»</p>
-                <form name="aitisi_f" action="aitisi-to-email.php">
+                <form name="aitisi_f" method="post" action="emailer.php">
                     <!-- 2 column grid layout with text inputs for the first and last names -->
                     <label for="inputsurnmae" class="col col-form-label"> Στοιχεία</label>
                     <div class="row mb-4">
                         <div class="col">
                             <div class="form-outline">
-                                <input type="text" id="name" class="form-control" placeholder="Όνομα" required/>
+                                <input type="text" name="name" class="form-control" placeholder="Όνομα" required />
                             </div>
                         </div>
                         <div class="col">
                             <div class="form-outline">
-                                <input type="text" id="lastname" class="form-control" placeholder="Επώνυμο" required/>
+                                <input type="text" name="lastname" class="form-control" placeholder="Επώνυμο" required />
                             </div>
                         </div>
                     </div>
                     <div class="form-outline mb-4">
-                        <input type="text" id="fathersname" class="form-control" placeholder="Πατρώνυμο" required/>
+                        <input type="text" name="fathersname" class="form-control" placeholder="Πατρώνυμο" required />
                     </div>
                     <div class="form-outline mb-4">
-                        <input type="text" id="mothersname" class="form-control" placeholder="Μυτρώνυμο" required/>
+                        <input type="text" name="mothersname" class="form-control" placeholder="Μυτρώνυμο" required />
                     </div>
                     <label for="inputaddressstreet" class="col col-form-label">Διεύθηνση Κατοικίας</label>
                     <div class="row mb-4">
                         <div class="col">
                             <div class="form-outline">
-                                <input type="text" id="street" class="form-control" placeholder="Οδός" required/>
+                                <input type="text" name="street" class="form-control" placeholder="Οδός" required />
                             </div>
                         </div>
                         <div class="col-sm-4">
                             <div class="form-outline">
-                                <input type="number" id="streetno" class="form-control" placeholder="Αριθμός" required/>
+                                <input type="number" name="streetno" class="form-control" placeholder="Αριθμός" required />
                             </div>
                         </div>
                     </div>
                     <div class="row mb-4">
                         <div class="col">
                             <div class="form-outline">
-                                <input type="text" id="city" class="form-control" placeholder="Πόλη" required/>
+                                <input type="text" name="city" class="form-control" placeholder="Πόλη" required />
                             </div>
                         </div>
                         <div class="col-sm-4">
                             <div class="form-outline">
-                                <input type="text" id="postalcode" class="form-control" placeholder="Τ.Κ." required/>
+                                <input type="text" name="postalcode" class="form-control" placeholder="Τ.Κ." required />
                             </div>
                         </div>
                     </div>
                     <label for="inputsurnmae" class="col col-form-label"> Στοιχεία Επικοινωνίας</label>
                     <!-- Email input -->
                     <div class="form-outline mb-4">
-                        <input type="email" id="email" class="form-control" placeholder="Διεύθηνση e-mail" required/>
+                        <input type="email" name="email" class="form-control" placeholder="Διεύθηνση e-mail" required />
                     </div>
                     <div class="form-outline mb-4">
-                        <input type="text" id="telephone" class="form-control" placeholder="Τηλέφωνο Επικοινωνίας" required/>
+                        <input type="text" name="telephone" class="form-control" placeholder="Τηλέφωνο Επικοινωνίας" required />
                     </div>
                     <p>
                         <small class="text-muted">
-                        Βάσει του νέου Ευρωπαϊκού κανονισμού περί προστασίας προσωπικών δεδομένων (General Data Protection Regulation) που ισχύει από τις 25/05/2018, οφείλουμε να διατηρούμε τη γραπτή συγκατάθεση σας ως προς τη συλλογή και επεξεργασία των στοιχείων σας, με σκοπό
-                        την πραγματοποίηση των σκοπών του σωματείου, την άμεση ενημέρωση σας για την λειτουργία του σωματείου, καθώς και να απολαμβάνετε υπηρεσίες πρόσβασης στο σωματείο μας. Διατηρείτε πάντοτε το δικαίωμα να ανακαλέσετε την συγκατάθεση
-                        σας ανά πάσα στιγμή.
-                    </small>
+                            Βάσει του νέου Ευρωπαϊκού κανονισμού περί προστασίας προσωπικών δεδομένων (General Data Protection Regulation) που ισχύει από τις 25/05/2018, οφείλουμε να διατηρούμε τη γραπτή συγκατάθεση σας ως προς τη συλλογή και επεξεργασία των στοιχείων σας, με σκοπό
+                            την πραγματοποίηση των σκοπών του σωματείου, την άμεση ενημέρωση σας για την λειτουργία του σωματείου, καθώς και να απολαμβάνετε υπηρεσίες πρόσβασης στο σωματείο μας. Διατηρείτε πάντοτε το δικαίωμα να ανακαλέσετε την συγκατάθεση
+                            σας ανά πάσα στιγμή.
+                        </small>
                     </p>
                     <p>
                         Παρακαλώ να με γράψετε στα μητρώα σας, ως μέλος του σωματείου.</p>
@@ -151,26 +152,44 @@
                     <br>
                     <p>
                         Ημερομηνία:
-                        <input type="date" value="<?php echo date('Y-m-d'); ?>" required/>
+                        <input type="date" name="date" value="<?php echo date('Y-m-d'); ?>" required />
                     </p>
                     <p>
                         <div class="container">
-                            <div class="row">
-                                <div class="col-6 col-sm-1 d-flex p-1" style="margin: 0;padding: 0;">Ο/Η ΑΙΤ</div>
-                                <div class="col-6 col-sm-3"> <select class="form-control">
-                                <option>ΩΝ</option>
-                                <option>ΟΥΣΑ</option>
-                                </select></div>
+                            <div class="d-flex flex-row">
+                                <div class="p-2">Ο/Η ΑΙΤ</div>
+                                <div class="p-2"> <select class="form-control">
+                                        <option>ΩΝ</option>
+                                        <option>ΟΥΣΑ</option>
+                                    </select></div>
                             </div>
                         </div>
                     </p>
                     <br>
                     <div class="form-outline mb-4">
-                        <input type="text" id="inputsignature" class="form-control" placeholder="Υπογραφή (Πλήρες Ονοματεπώνημο)" required/>
+                        <input type="text" id="inputsignature" name="inputsignature" class="form-control" placeholder="Υπογραφή (Πλήρες Ονοματεπώνημο)" required />
+                    </div>
+                    <!-- CAPTCHA -->
+                    <br>
+                    <div class="form-outline captcha-box p-2">
+                        <img class="img-responsive" src="assets/vendor/phpcaptcha/captcha.php?rand=<?php echo rand(); ?>" id='captchaimg'>
+                        <div class="row">
+                            <div class="col">
+                                <label for="inputsurnmae" class="col col-form-label">Εισάγετε τον κωδικό της παραπάνω εικόνας:</label>
+                            </div>
+                            <div class="w-100"></div>
+                            <div class="form-outline col-5">
+                                <input type="captcha_code" id="captcha_code" name="captcha_code" class="form-control" placeholder="Κωδικός CAPTCHA." required />
+                            </div>
+                        </div>
+                        <small class="text-muted">
+                            Εικόνα δυσανάγνωστη? Πατήστε <a href='javascript: refreshCaptcha();'>εδώ</a> για ανανέωση.
+                        </small>
                     </div>
                     <!-- Submit button -->
                     <button type="submit" class="btn-submit-form">Αποστολή Αίτησεως</button>
-
+                </form>
+            </div>
         </section>
         <!-- End Members Section -->
 

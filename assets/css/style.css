@@ -2320,3 +2320,8 @@ section {
     border-color: #C62828;
     color: #fff;
 }
+
+.captcha-box {
+    background-color: #FAFAFA;
+    width: fit-content;
+}
