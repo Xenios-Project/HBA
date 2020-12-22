@@ -1,4 +1,5 @@
 <?php
+session_start();
 error_reporting(E_ALL);
 ini_set('display_errors', '1');
 $errors = array();
@@ -16,13 +17,13 @@ function validate_CAPTCHA($requested_page)
     if (empty($_SESSION['captcha_code']) || strcasecmp($_SESSION['captcha_code'], $_POST['captcha_code']) != 0) {
         $msg = "captcha_incorect"; // Captcha verification is incorrect.
         if (strpos($requested_page, 'aitisi_f.php') !== false) {
-            header('location:aitisi_f.php?msg='.$msg);
+            header('location:aitisi_f.php?msg=' . $msg);
             die();
-        }elseif (strpos($requested_page, 'aitisi_n.php') !== false) {
-            header('location:aitisi_n.php?msg='.$msg);
+        } elseif (strpos($requested_page, 'aitisi_n.php') !== false) {
+            header('location:aitisi_n.php?msg=' . $msg);
             die();
-        }elseif (strpos($requested_page, 'index.php') !== false) {
-            header('location:index.php?msg='.$msg."#contact");
+        } elseif (strpos($requested_page, 'index.php') !== false) {
+            header('location:index.php?msg=' . $msg . "#contact");
             die();
         }
     }
@@ -86,7 +87,7 @@ if (strpos($requested_page, 'aitisi_f.php') !== false) {
 }
 
 //email success msg
-// $sendmail =  @mail($email_to, $email_subject, $email_body, $headers);
+$sendmail =  @mail($email_to, $email_subject, $email_body, $headers);
 
 if (!$sendmail) {
     $msg = "fail";
