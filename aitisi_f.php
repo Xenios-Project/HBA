@@ -6,6 +6,13 @@
     <script type="text/javascript">
         document.getElementById('datePicker').valueAsDate = new Date();
     </script>
+    <script type='text/javascript'>
+        function refreshCaptcha() {
+            var img = document.images['captchaimg'];
+            img.src = img.src.substring(0, img.src.lastIndexOf("?")) + "?rand=" + Math.random() * 1000;
+        }
+    </script>
+
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
@@ -46,28 +53,38 @@
     <header id="header" class="fixed-top">
         <div class="container d-flex align-items-center">
             <h1 class="logo mr-auto">
-                <a href="index.html"><img src="assets/img/logo-square.png"> HBA<span>.</span></a>
+                <a href="index.php"><img src="assets/img/logo-square.png"> HBA<span>.</span></a>
             </h1>
             <!-- Uncomment below if you prefer to use an image logo -->
             <!-- <a href="index.html" class="logo mr-auto"><img src="assets/img/logo.png" alt=""></a>-->
 
             <nav class="nav-menu d-none d-lg-block">
                 <ul>
-                    <li><a href="index.html#header">Home</a></li>
-                    <li><a href="index.html#about">About</a></li>
-                    <li><a href="index.html#Members">Μέλη</a></li>
-                    <li><a href="index.html#New-Member">Εγγραφή</a></li>
-                    <li><a href="index.html#Goals">Στόχοι</a></li>
-                    <li><a href="blog.html">Ανακοινώσεις</a></li>
+                    <li><a href="index.php#header">Home</a></li>
+                    <li><a href="index.php#about">About</a></li>
+                    <li><a href="index.php#Members">Μέλη</a></li>
+                    <li class="active"><a href="index.php#New-Member">Εγγραφή</a></li>
+                    <li><a href="index.php#Goals">Στόχοι</a></li>
+                    <li><a href="announcements.html">Ανακοινώσεις</a></li>
                 </ul>
             </nav>
             <!-- .nav-menu -->
 
-            <a href="index.html#contact" class="get-started-btn scrollto">Contact</a>
+            <a href="index.php#contact" class="get-started-btn scrollto">Contact</a>
         </div>
     </header>
     <!-- End Header -->
-
+    <?php
+    if ($_GET['msg'] == 'captcha_incorect') {
+        $msg = 'Η δοθείσα λύση του CAPTCHA δεν ήτανε σωστή, παρακαλώ ξανα προσπαθήστε.';
+        echo '<div class="alert alert alert-danger alert-dismissible fade show" id="alert" role="alert">
+        ' . $msg . '
+                    <button id="btn-alert" type="button" class="close" data-dismiss="alert" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>';
+    }
+    ?>
     <!-- ======= Hero Section ======= -->
     <main id="main">
         <!-- ======= Members Section ======= -->

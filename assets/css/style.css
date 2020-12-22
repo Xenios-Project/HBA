@@ -389,6 +389,21 @@ h6 {
 # Hero Section
 --------------------------------------------------------------*/
 
+#alert {
+    width: 100%;
+    top: 7vh;
+    position: fixed;
+    height: 6vh;
+    margin-bottom: 0px;
+    text-align: center;
+    z-index: 10000;
+}
+
+#btn-alert {
+    background-color: transparent;
+    border-radius: 100%;
+}
+
 #hero {
     width: 100%;
     height: 65vh;

@@ -1,4 +1,4 @@
-<?php session_start();?>
+<?php session_start(); ?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -55,28 +55,38 @@
     <header id="header" class="fixed-top">
         <div class="container d-flex align-items-center">
             <h1 class="logo mr-auto">
-                <a href="index.html"><img src="assets/img/logo-square.png"> HBA<span>.</span></a>
+                <a href="index.php"><img src="assets/img/logo-square.png"> HBA<span>.</span></a>
             </h1>
             <!-- Uncomment below if you prefer to use an image logo -->
             <!-- <a href="index.html" class="logo mr-auto"><img src="assets/img/logo.png" alt=""></a>-->
 
             <nav class="nav-menu d-none d-lg-block">
                 <ul>
-                    <li><a href="index.html#header">Home</a></li>
-                    <li><a href="index.html#about">About</a></li>
-                    <li><a href="index.html#Members">Μέλη</a></li>
-                    <li><a href="index.html#New-Member">Εγγραφή</a></li>
-                    <li><a href="index.html#Goals">Στόχοι</a></li>
-                    <li><a href="blog.html">Ανακοινώσεις</a></li>
+                    <li><a href="index.php#header">Home</a></li>
+                    <li><a href="index.php#about">About</a></li>
+                    <li><a href="index.php#Members">Μέλη</a></li>
+                    <li class="active"><a href="index.php#New-Member">Εγγραφή</a></li>
+                    <li><a href="index.php#Goals">Στόχοι</a></li>
+                    <li><a href="announcements.html">Ανακοινώσεις</a></li>
                 </ul>
             </nav>
             <!-- .nav-menu -->
 
-            <a href="index.html#contact" class="get-started-btn scrollto">Contact</a>
+            <a href="index.php#contact" class="get-started-btn scrollto">Contact</a>
         </div>
     </header>
     <!-- End Header -->
-
+    <?php
+    if ($_GET['msg'] == 'captcha_incorect') {
+        $msg = 'Η δοθείσα λύση του CAPTCHA δεν ήτανε σωστή, παρακαλώ ξανα προσπαθήστε.';
+        echo '<div class="alert alert alert-danger alert-dismissible fade show" id="alert" role="alert">
+        ' . $msg . '
+        <button id="btn-alert" type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>';
+    }
+    ?>
     <!-- ======= Hero Section ======= -->
     <main id="main">
         <!-- ======= Members Section ======= -->
@@ -93,50 +103,50 @@
                 </div>
                 <p>Κύριες και Κύριοι,</p>
                 <p> Σας παρακαλώ να με εγγράψετε ως μέλος του σωματείου με την επωνυμία «ΠΑΝΕΛΛΗΝΙΟΣ ΣΥΛΛΟΓΟΣ BLOCKCHAIN»</p>
-                <form name="aitisi_f" action="emailer.php" method="post">
+                <form name="aitisi_f" action="emailer.php" method="post" role="form" class="php-email-form">
                     <!-- 2 column grid layout with text inputs for the first and last names -->
                     <label for="inputsurnmae" class="col col-form-label"> Στοιχεία</label>
                     <div class="form-outline mb-4">
-                        <input type="text" name="company" class="form-control" placeholder="Επωνυμία" required/>
+                        <input type="text" name="company" class="form-control" placeholder="Επωνυμία" required />
                     </div>
                     <div class="form-outline mb-4">
-                        <input type="text" name="legalrep" class="form-control" placeholder="Νομικός Εκπρόσωπος" required/>
+                        <input type="text" name="legalrep" class="form-control" placeholder="Νομικός Εκπρόσωπος" required />
                     </div>
                     <div class="form-outline mb-4">
-                        <input type="text" name="afm" class="form-control" placeholder="Α.Φ.Μ / Δ.Ο.Υ" required/>
+                        <input type="text" name="afm" class="form-control" placeholder="Α.Φ.Μ / Δ.Ο.Υ" required />
                     </div>
                     <label for="inputaddressstreet" class="col col-form-label">Έδρα</label>
                     <div class="row mb-4">
                         <div class="col">
                             <div class="form-outline">
-                                <input type="text" name="street" class="form-control" placeholder="Οδός" required/>
+                                <input type="text" name="street" class="form-control" placeholder="Οδός" required />
                             </div>
                         </div>
                         <div class="col-sm-4">
                             <div class="form-outline">
-                                <input type="text" name="streetno" class="form-control" placeholder="Αριθμός" required/>
+                                <input type="text" name="streetno" class="form-control" placeholder="Αριθμός" required />
                             </div>
                         </div>
                     </div>
                     <div class="row mb-4">
                         <div class="col">
                             <div class="form-outline">
-                                <input type="text" name="city" class="form-control" placeholder="Πόλη" required/>
+                                <input type="text" name="city" class="form-control" placeholder="Πόλη" required />
                             </div>
                         </div>
                         <div class="col-sm-4">
                             <div class="form-outline">
-                                <input type="text" name="postalcode" class="form-control" placeholder="Τ.Κ." required/>
+                                <input type="text" name="postalcode" class="form-control" placeholder="Τ.Κ." required />
                             </div>
                         </div>
                     </div>
                     <label for="visitor_email" class="col col-form-label"> Στοιχεία Επικοινωνίας</label>
                     <!-- Email input -->
                     <div class="form-outline mb-4">
-                        <input type="email" name="visitor_email" class="form-control" placeholder="Διεύθηνση e-mail" required/>
+                        <input type="email" name="visitor_email" class="form-control" placeholder="Διεύθηνση e-mail" required />
                     </div>
                     <div class="form-outline mb-4">
-                        <input type="text" name="telephone" class="form-control" placeholder="Τηλέφωνο Επικοινωνίας" required/>
+                        <input type="text" name="telephone" class="form-control" placeholder="Τηλέφωνο Επικοινωνίας" required />
                     </div>
                     <p>
                         <small class="text-muted">
@@ -162,15 +172,15 @@
                             <div class="d-flex flex-row">
                                 <div class="p-2">Ο/Η ΑΙΤ</div>
                                 <div class="p-2"> <select class="form-control">
-                                <option>ΩΝ</option>
-                                <option>ΟΥΣΑ</option>
-                                </select></div>
+                                        <option>ΩΝ</option>
+                                        <option>ΟΥΣΑ</option>
+                                    </select></div>
                             </div>
                         </div>
                     </p>
                     <br>
                     <div class="form-outline mb-4">
-                        <input type="text" name="inputsignature" class="form-control" placeholder="Υπογραφή (Πλήρες Ονοματεπώνημο)" required/>
+                        <input type="text" name="inputsignature" class="form-control" placeholder="Υπογραφή (Πλήρες Ονοματεπώνημο)" required />
                     </div>
                     <!-- CAPTCHA -->
                     <br>
@@ -182,7 +192,7 @@
                             </div>
                             <div class="w-100"></div>
                             <div class="form-outline col-5">
-                                <input type="captcha_code" id="captcha_code" class="form-control" placeholder="Κωδικός CAPTCHA." required/>
+                                <input type="captcha_code" id="captcha_code" name="captcha_code" class="form-control" placeholder="Κωδικός CAPTCHA." required />
                             </div>
                         </div>
                         <small class="text-muted">

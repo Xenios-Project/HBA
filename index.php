@@ -1,8 +1,18 @@
-<?php session_start();?>
+<?php session_start(); ?>
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
+
+    <script type='text/javascript'>
+        function refreshCaptcha() {
+            var img = document.images['captchaimg'];
+            img.src = img.src.substring(0, img.src.lastIndexOf("?")) + "?rand=" + Math.random() * 1000;
+        }
+    </script>
+    <script type='text/javascript'>
+        $('.alert').alert()
+    </script>
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
@@ -65,6 +75,41 @@
     </header>
     <!-- End Header -->
 
+    <?php
+    if ($_GET['msg'] == 'success_communication') {
+        $msg = 'Ευχαριστούμε για την επικοινωνία θα σας απαντήσουμε το συντομότερο δυνατό.';
+        echo '<div class="alert alert alert-success alert-dismissible fade show" id="alert" role="alert">
+                    ' . $msg . '
+                        <button id="btn-alert" type="button" class="close" data-dismiss="alert" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>';
+    } elseif ($_GET['msg'] == 'success_subscription') {
+        $msg = 'Η Αίτηση σας έγινε αποδεχτή. Αναμένετε επικοιωνία μέσω e-mail με την επιβαβαίωση εγγραφής.';
+        echo '<div class="alert alert alert-success alert-dismissible fade show" id="alert" role="alert">
+                ' . $msg . '
+                    <button id="btn-alert" type="button" class="close" data-dismiss="alert" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>';
+    } elseif ($_GET['msg'] == 'fail') {
+        $msg = 'Παρουσιάστηκε τεχνικό πρόβλημα, παρακαλώ ενημερώστε μας μέσω mail ή τηλεφώνου.';
+        echo '<div class="alert alert alert-danger alert-dismissible fade show" id="alert" role="alert">
+        ' . $msg . '
+                    <button id="btn-alert" type="button" class="close" data-dismiss="alert" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>';
+    } elseif ($_GET['msg'] == 'captcha_incorect') {
+        $msg = 'Η δοθείσα λύση του CAPTCHA δεν ήτανε σωστή, παρακαλώ ξανα προσπαθήστε.';
+        echo '<div class="alert alert alert-danger alert-dismissible fade show" id="alert" role="alert">
+        ' . $msg . '
+                    <button id="btn-alert" type="button" class="close" data-dismiss="alert" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>';
+    }
+    ?>
     <!-- ======= Hero Section ======= -->
     <section id="hero" class="d-flex align-items-center">
 
@@ -102,7 +147,6 @@
             </div>
         </section> -->
         <!-- End Clients Section -->
-
         <!-- ======= About Section ======= -->
         <section id="about" class="about section-bg">
             <div class="container" data-aos="fade-up">
@@ -496,10 +540,22 @@
                                 <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Παρακαλώ πληκτρολογήστε το μήνυμα σας." placeholder="Μήνυμα"></textarea>
                                 <div class="validate"></div>
                             </div>
-                            <div class="mb-3">
-                                <div class="loading">Loading</div>
-                                <div class="error-message"></div>
-                                <div class="sent-message">Το μήνυμα σας απεστάλη! Ευχαριστούμε για την επικοινωνία.</div>
+                            <!-- CAPTCHA -->
+                            <br>
+                            <div class="form-outline captcha-box p-2">
+                                <img class="img-responsive" src="assets/vendor/phpcaptcha/captcha.php?rand=<?php echo rand(); ?>" id='captchaimg'>
+                                <div class="row">
+                                    <div class="col">
+                                        <label for="inputsurnmae" class="col col-form-label">Εισάγετε τον κωδικό της παραπάνω εικόνας:</label>
+                                    </div>
+                                    <div class="w-100"></div>
+                                    <div class="form-outline col-5">
+                                        <input type="captcha_code" id="captcha_code" name="captcha_code" class="form-control" placeholder="Κωδικός CAPTCHA." required />
+                                    </div>
+                                </div>
+                                <small class="text-muted">
+                                    Εικόνα δυσανάγνωστη? Πατήστε <a href='javascript: refreshCaptcha();'>εδώ</a> για ανανέωση.
+                                </small>
                             </div>
                             <div class="text-center"><button type="submit">Αποστολή Μηνύματος</button></div>
                         </form>
@@ -547,7 +603,6 @@
     <script src="assets/vendor/jquery/jquery.min.js"></script>
     <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
-    <script src="assets/vendor/php-email-form/validate.js"></script>
     <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
     <script src="assets/vendor/waypoints/jquery.waypoints.min.js"></script>
     <script src="assets/vendor/counterup/counterup.min.js"></script>
