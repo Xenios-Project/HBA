@@ -1,8 +1,8 @@
 <?php
+// error_reporting(E_ALL);
+// ini_set('display_errors', '1');
+// $errors = array();
 session_start();
-error_reporting(E_ALL);
-ini_set('display_errors', '1');
-$errors = array();
 
 function validate($data)
 {
@@ -18,24 +18,30 @@ function validate_CAPTCHA($requested_page)
         $msg = "captcha_incorect"; // Captcha verification is incorrect.
         if (strpos($requested_page, 'aitisi_f.php') !== false) {
             header('location:aitisi_f.php?msg=' . $msg);
+            session_destroy();
             die();
         } elseif (strpos($requested_page, 'aitisi_n.php') !== false) {
             header('location:aitisi_n.php?msg=' . $msg);
+            session_destroy();
             die();
         } elseif (strpos($requested_page, 'index.php') !== false) {
             header('location:index.php?msg=' . $msg . "#contact");
+            session_destroy();
             die();
         }
     }
+    session_destroy();
 }
 
 $requested_page = validate($_SERVER['HTTP_REFERER']);
 validate_CAPTCHA($requested_page);
+
 $email_to = 'info@hba.org.gr';
 $email_body = '';
 $msg = '';
 
 if (strpos($requested_page, 'aitisi_f.php') !== false) {
+    echo 'swsto';
     $name = validate($_POST['name'])  ?? '';
     $lastname = validate($_POST['lastname'])  ?? '';
     $fathersname = validate($_POST['fathersname'])  ?? '';
@@ -52,7 +58,7 @@ if (strpos($requested_page, 'aitisi_f.php') !== false) {
     $email_from = 'registration.info@hba.org.gr';
     $headers = 'From: hba registration form' . "\r\n" . 'X-Mailer: PHP/' . phpversion();
     $email_subject = "Αίτηση Εγγραφής Φυσικού Προσώπου $name $lastname";
-    $email_body = "Ο/H " . $name . " " . $lastname . "<br>Όνομα Πατρός: " . $fathersname . "<br>Όνομα Μητρός: " . $mothersname . "<br>Διεύθηνση Κατοικίας: " . $street . " " . $steetno . ", " . $city . ", " . $postalcode . "<br>Τηλέφωνο Επικοινωνίας: " . $telephone . "<br>e-mail " . $visitor_email . "<br>Υπογραφή: " . $inputsignature . "<br><br> Την $date αιτήθηκε να γίνει μέλος στο Hellenic Blockchain Assosiation με πλήρη γνώση των όρον και προυποθέσεων.";
+    $email_body = "<html>Ο/H " . $name . " " . $lastname . "<br>Όνομα Πατρός: " . $fathersname . "<br>Όνομα Μητρός: " . $mothersname . "<br>Διεύθηνση Κατοικίας: " . $street . " " . $steetno . ", " . $city . ", " . $postalcode . "<br>Τηλέφωνο Επικοινωνίας: " . $telephone . "<br>e-mail " . $visitor_email . "<br>Υπογραφή: " . $inputsignature . "<br><br> Την $date αιτήθηκε να γίνει μέλος στο Hellenic Blockchain Assosiation με πλήρη γνώση των όρον και προυποθέσεων.</html>";
     $msg = "success_subscription";
 } elseif (strpos($requested_page, 'aitisi_n.php') !== false) {
     $company = validate($_POST['company']) ?? '';
@@ -70,7 +76,7 @@ if (strpos($requested_page, 'aitisi_f.php') !== false) {
     $email_from = 'registration.info@hba.org.gr';
     $headers = 'From: hba registration form' . "\r\n" . 'X-Mailer: PHP/' . phpversion();
     $email_subject = "Αίτηση Εγγραφής Νομικού Προσώπου $name $lastname";
-    $email_body = "Το νομικό πρόσωπο " . $company . "<br>Με αντιρπρόσωπο: " . $legalrep . "<br>ΑΦΜ/ΔΟΥ: " . $afm . "<br>Διεύθηνση: " . $street . " " . $steetno . ", " . $city . ", " . $postalcode . "<br>Τηλέφωνο Επικοινωνίας: " . $telephone . "<br>e-mail " . $visitor_email . "<br>Υπογραφή: " . $inputsignature . "<br><br> Την " . $date . " αιτήθηκε να γίνει μέλος στο Hellenic Blockchain Assosiation με πλήρη γνώση των όρον και προυποθέσεων.";
+    $email_body = "<html>Το νομικό πρόσωπο " . $company . "<br>Με αντιρπρόσωπο: " . $legalrep . "<br>ΑΦΜ/ΔΟΥ: " . $afm . "<br>Διεύθηνση: " . $street . " " . $steetno . ", " . $city . ", " . $postalcode . "<br>Τηλέφωνο Επικοινωνίας: " . $telephone . "<br>e-mail " . $visitor_email . "<br>Υπογραφή: " . $inputsignature . "<br><br> Την " . $date . " αιτήθηκε να γίνει μέλος στο Hellenic Blockchain Assosiation με πλήρη γνώση των όρον και προυποθέσεων.</html>";
     $msg = "success_subscription";
 } elseif (strpos($requested_page, 'index.php') !== false) {
     $name = validate($_POST['name']) ?? '';
@@ -82,7 +88,7 @@ if (strpos($requested_page, 'aitisi_f.php') !== false) {
     $headers = "From: $email \r\n";
     $headers .= "Reply-To: $email \r\n";
     $email_subject = "Επικοινωνία μέσω φόρμας: $subject";
-    $email_body = "Ο/Η " . $name . " με email " . $email . " έγραψε: <br><br>" . $message;
+    $email_body = "<html>Ο/Η " . $name . " με email " . $email . " έγραψε: <br><br>" . $message.'</html>';
     $msg = "success_communication";
 }
 
@@ -92,4 +98,4 @@ $sendmail =  @mail($email_to, $email_subject, $email_body, $headers);
 if (!$sendmail) {
     $msg = "fail";
 }
-header('location:index.php?msg='.$msg);
+header('location:index.php?msg=' . $msg);

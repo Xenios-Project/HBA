@@ -16,13 +16,14 @@
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-    <title>Hellenic</title>
+    <title>Hellenic Blockchain Assossiation</title>
+    <link rel="icon" type="image/png" href="favicon.ico">
     <meta content="" name="description">
     <meta content="" name="keywords">
 
     <!-- Favicons -->
-    <link href="assets/img/favicon.png" rel="icon">
-    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+    <!-- <link href="assets/img/favicon.png" rel="icon"> -->
+    <!-- <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon"> -->
 
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
@@ -85,7 +86,7 @@
                         </button>
                     </div>';
     } elseif ($_GET['msg'] == 'success_subscription') {
-        $msg = 'Η Αίτηση σας έγινε αποδεχτή. Αναμένετε επικοιωνία μέσω e-mail με την επιβαβαίωση εγγραφής.';
+        $msg = 'Η Αίτηση σας έγινε αποδεχτή. Αναμένετε επικοινωνία μέσω e-mail με την επιβεβαίωση εγγραφής.';
         echo '<div class="alert alert alert-success alert-dismissible fade show" id="alert" role="alert">
                 ' . $msg . '
                     <button id="btn-alert" type="button" class="close" data-dismiss="alert" aria-label="Close">
@@ -101,7 +102,7 @@
                     </button>
                 </div>';
     } elseif ($_GET['msg'] == 'captcha_incorect') {
-        $msg = 'Η δοθείσα λύση του CAPTCHA δεν ήτανε σωστή, παρακαλώ ξανα προσπαθήστε.';
+        $msg = 'Η δοθείσα λύση του CAPTCHA δεν ήτανε σωστή, παρακαλώ ξαναπροσπαθήστε.';
         echo '<div class="alert alert alert-danger alert-dismissible fade show" id="alert" role="alert">
         ' . $msg . '
                     <button id="btn-alert" type="button" class="close" data-dismiss="alert" aria-label="Close">
@@ -169,7 +170,7 @@
                             <div class="row">
                                 <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="100">
                                     <i class="bx bx-cube-alt"></i>
-                                    <h4>Independet</h4>
+                                    <h4>Independent</h4>
                                     <p>The blockchain technology allows for verification without having to be dependent on third-parties.</p>
                                 </div>
                                 <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="200">
@@ -373,7 +374,7 @@
             <div class="container" data-aos="fade-up">
 
                 <div class="section-title">
-                    <h2>Μελη</h2>
+                    <h2>Μέλη</h2>
                 </div>
                 <div class="row">
                     <div class="col-md-12">
@@ -404,7 +405,7 @@
             <div class="container" data-aos="fade-up">
 
                 <div class="section-title">
-                    <h2>Πως να γινω μελος;</h2>
+                    <h2>Πως να γίνω μέλος;</h2>
                 </div>
                 <div class="row">
                     <div class="col-md-12">
@@ -486,7 +487,7 @@
             <div class="container" data-aos="fade-up">
 
                 <div class="section-title">
-                    <h2>Επικοινωνια</h2>
+                    <h2>Επικοινωνία</h2>
                     <p>Επικοινωνήστε μαζί μας χρησιμοποιώντας την παρακάτω φόρμα.</p>
                 </div>
 
