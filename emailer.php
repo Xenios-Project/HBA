@@ -57,8 +57,10 @@ if (strpos($requested_page, 'aitisi_f.php') !== false) {
 
     $email_from = 'registration.info@hba.org.gr';
     $headers = 'From: hba registration form' . "\r\n" . 'X-Mailer: PHP/' . phpversion();
+    $headers .= "MIME-Version: 1.0\r\n";
+    $headers .= "Content-Type: text/html;\r\n";
     $email_subject = "Αίτηση Εγγραφής Φυσικού Προσώπου $name $lastname";
-    $email_body = "<html>Ο/H " . $name . " " . $lastname . "<br>Όνομα Πατρός: " . $fathersname . "<br>Όνομα Μητρός: " . $mothersname . "<br>Διεύθηνση Κατοικίας: " . $street . " " . $steetno . ", " . $city . ", " . $postalcode . "<br>Τηλέφωνο Επικοινωνίας: " . $telephone . "<br>e-mail " . $visitor_email . "<br>Υπογραφή: " . $inputsignature . "<br><br> Την $date αιτήθηκε να γίνει μέλος στο Hellenic Blockchain Assosiation με πλήρη γνώση των όρον και προυποθέσεων.</html>";
+    $email_body = "<html><h2>Αίτημα Εγγραφής HBA</h2><br>Ο/H " . $name . " " . $lastname . "<br>Όνομα Πατρός: " . $fathersname . "<br>Όνομα Μητρός: " . $mothersname . "<br>Διεύθηνση Κατοικίας: " . $street . " " . $steetno . ", " . $city . ", " . $postalcode . "<br>Τηλέφωνο Επικοινωνίας: " . $telephone . "<br>e-mail " . $visitor_email . "<br>Υπογραφή: " . $inputsignature . "<br><br> Την $date αιτήθηκε να γίνει μέλος στο Hellenic Blockchain Assosiation με πλήρη γνώση των όρον και προυποθέσεων.</html>";
     $msg = "success_subscription";
 } elseif (strpos($requested_page, 'aitisi_n.php') !== false) {
     $company = validate($_POST['company']) ?? '';
@@ -75,8 +77,10 @@ if (strpos($requested_page, 'aitisi_f.php') !== false) {
 
     $email_from = 'registration.info@hba.org.gr';
     $headers = 'From: hba registration form' . "\r\n" . 'X-Mailer: PHP/' . phpversion();
+    $headers .= "MIME-Version: 1.0\r\n";
+    $headers .= "Content-Type: text/html;\r\n";
     $email_subject = "Αίτηση Εγγραφής Νομικού Προσώπου $name $lastname";
-    $email_body = "<html>Το νομικό πρόσωπο " . $company . "<br>Με αντιρπρόσωπο: " . $legalrep . "<br>ΑΦΜ/ΔΟΥ: " . $afm . "<br>Διεύθηνση: " . $street . " " . $steetno . ", " . $city . ", " . $postalcode . "<br>Τηλέφωνο Επικοινωνίας: " . $telephone . "<br>e-mail " . $visitor_email . "<br>Υπογραφή: " . $inputsignature . "<br><br> Την " . $date . " αιτήθηκε να γίνει μέλος στο Hellenic Blockchain Assosiation με πλήρη γνώση των όρον και προυποθέσεων.</html>";
+    $email_body = "<html><h2>Αίτημα Εγγραφής HBA</h2><br>Το νομικό πρόσωπο " . $company . "<br>Με αντιπρόσωπο: " . $legalrep . "<br>ΑΦΜ/ΔΟΥ: " . $afm . "<br>Διεύθηνση: " . $street . " " . $steetno . ", " . $city . ", " . $postalcode . "<br>Τηλέφωνο Επικοινωνίας: " . $telephone . "<br>e-mail " . $visitor_email . "<br>Υπογραφή: " . $inputsignature . "<br><br> Την " . $date . " αιτήθηκε να γίνει μέλος στο Hellenic Blockchain Assosiation με πλήρη γνώση των όρων και προυποθέσεων.</html>";
     $msg = "success_subscription";
 } elseif (strpos($requested_page, 'index.php') !== false) {
     $name = validate($_POST['name']) ?? '';
@@ -87,8 +91,10 @@ if (strpos($requested_page, 'aitisi_f.php') !== false) {
     $email_from = 'support.info@hba.org.gr';
     $headers = "From: $email \r\n";
     $headers .= "Reply-To: $email \r\n";
+    $headers .= "MIME-Version: 1.0\r\n";
+    $headers .= "Content-Type: text/html;\r\n";
     $email_subject = "Επικοινωνία μέσω φόρμας: $subject";
-    $email_body = "<html>Ο/Η " . $name . " με email " . $email . " έγραψε: <br><br>" . $message.'</html>';
+    $email_body = "<html><h2>Επικοινωνία μέσω φόρμας HBA.org.gr</h2><p>Ο/Η " . $name . " με email " . $email . " έγραψε: </p><br><br><p>" . $message.'</p></html>';
     $msg = "success_communication";
 }
 
