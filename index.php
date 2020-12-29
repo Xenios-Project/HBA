@@ -67,6 +67,7 @@
                     <li><a href="#New-Member">Εγγραφή</a></li>
                     <li><a href="#Goals">Στόχοι</a></li>
                     <li><a href="announcements.html">Ανακοινώσεις</a></li>
+					<li><a href="https://edu.hba.org.gr">Εκπαίδευση</a></li>
                 </ul>
             </nav>
             <!-- .nav-menu -->
@@ -117,9 +118,9 @@
         <div class="container" data-aos="zoom-out" data-aos-delay="100">
             <div class="row">
                 <div class="col-xl-6">
-                    <h1>Hellenic Blockchain Assosiation</h1>
+                    <h1>Hellenic Blockchain Association</h1>
                     <h2>Καλώς ορίσατε στην επίσημη ιστοσελίδα μας.</h2>
-                    <a href="#about" class="btn-get-started scrollto">Get Started</a>
+                    <a href="#about" class="btn-get-started scrollto">Ποιοι είμαστε</a>
                 </div>
                 <div class="col-xl-6 logo">
 
@@ -155,7 +156,9 @@
                 <div class="row no-gutters">
                     <div class="content col-xl-5 d-flex align-items-stretch">
                         <div class="content">
-                            <h3>Λίγα Λόγια</h3>
+                            <div class="section-title">
+							<h2>ΛΙΓΑ ΛΟΓΙΑ</h2>
+							</div>
                             <p>
                                 Ο Πανελλήνιος Σύλλογος Blockchain (Hellenic Blockchain Association), είναι ίδρυμα (ΝΠΙΔ) μη κερδοσκοπικού χαρακτήρα.
                             </p>
@@ -176,17 +179,17 @@
                                 <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="200">
                                     <i class="bx bx-shield"></i>
                                     <h4>Secure</h4>
-                                    <p>It uses protected cryptography to secure the data ledgers.</p>
+                                    <p>Blockchain uses protected cryptography to secure the data ledgers.</p>
                                 </div>
                                 <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="300">
                                     <i class="bx bx-images"></i>
                                     <h4>Transparent</h4>
-                                    <p>All the transactions and data are attached to the block after the process of maximum trust verification. There is a consensus of all the ledger participants on what is to be recorded in the block.</p>
+                                    <p>All the blockchain transactions and data are attached to the block after the process of maximum trust verification. There is a consensus of all the ledger participants on what is to be recorded in the block.</p>
                                 </div>
                                 <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="400">
                                     <i class="bx bx-fingerprint"></i>
                                     <h4>Verifiable</h4>
-                                    <p>The origin of any ledger can be tracked along the chain to its point of origin.</p>
+                                    <p>The origin of any blockchain ledger can be tracked along the chain to its point of origin.</p>
                                 </div>
                             </div>
                         </div>
@@ -374,7 +377,7 @@
             <div class="container" data-aos="fade-up">
 
                 <div class="section-title">
-                    <h2>Μέλη</h2>
+                    <h2>ΜΕΛΗ</h2>
                 </div>
                 <div class="row">
                     <div class="col-md-12">
@@ -405,7 +408,7 @@
             <div class="container" data-aos="fade-up">
 
                 <div class="section-title">
-                    <h2>Πως να γίνω μέλος;</h2>
+                    <h2>Πως να γινω μελος;</h2>
                 </div>
                 <div class="row">
                     <div class="col-md-12">
@@ -439,7 +442,7 @@
             <div class="container" data-aos="fade-up">
 
                 <div class="section-title">
-                    <h2>Σκοποι και Στόχοι</h2>
+                    <h2>ΣΚΟΠΟΙ ΚΑΙ ΣΤΟΧΟΙ</h2>
                     <p>Ο Πανελλήνιος Σύλλογος Blockchain είναι ένα ίδρυμα μη κερδοσκοπικού χαρακτήρα. Οι βασικοί σκοποί της δημιουργίας του συλλόγου όπως περιγράφονται στο επίσημο καταστατικό είναι οι παρακάτω.</p>
                 </div>
 
@@ -487,7 +490,7 @@
             <div class="container" data-aos="fade-up">
 
                 <div class="section-title">
-                    <h2>Επικοινωνία</h2>
+                    <h2>ΕΠΙΚΟΙΝΩΝΙΑ</h2>
                     <p>Επικοινωνήστε μαζί μας χρησιμοποιώντας την παρακάτω φόρμα.</p>
                 </div>
 
@@ -499,7 +502,7 @@
                             <div class="col-md-12">
                                 <div class="info-box">
                                     <i class="bx bx-map"></i>
-                                    <h3>H Διευθηνση μας</h3>
+                                    <h3>Που θα μας βρείτε</h3>
                                     <p>Πάρνηθος 1 & Γκινοσάτη 14452 Μεταμόρφωση Αθήνα</p>
                                 </div>
                             </div>
@@ -525,7 +528,7 @@
                         <form action="emailer.php" method="post" role="form" class="php-email-form">
                             <div class="row">
                                 <div class="col form-group">
-                                    <input type="text" name="name" class="form-control" id="name" placeholder="Ονοματεπώνημο" data-rule="minlen:4" data-msg="Παρακαλώ εισάγετε το Ονοματεπώνημο σας." />
+                                    <input type="text" name="name" class="form-control" id="name" placeholder="Ονοματεπώνυμο" data-rule="minlen:4" data-msg="Παρακαλώ εισάγετε το Ονοματεπώνυμό σας." />
                                     <div class="validate"></div>
                                 </div>
                                 <div class="col form-group">
@@ -588,11 +591,11 @@
                 </div>
             </div>
             <div class="social-links text-center text-md-right pt-3 pt-md-0">
-                <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-                <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-                <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-                <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
-                <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+                <!-- <a href="#" class="twitter" target="_blank"><i class="bx bxl-twitter"></i></a>  -->
+                <a href="https://www.facebook.com/HBA.ORG.GR/" class="facebook" target="_blank"><i class="bx bxl-facebook"></i></a>
+                <!-- <a href="#" class="instagram"><i class="bx bxl-instagram" target="_blank"></i></a> -->
+                <!-- <a href="#" class="google-plus"><i class="bx bxl-skype" target="_blank"></i></a> -->
+                <a href="https://www.linkedin.com/company/26202501" class="linkedin" target="_blank"><i class="bx bxl-linkedin"></i></a>
             </div>
         </div>
     </footer>
