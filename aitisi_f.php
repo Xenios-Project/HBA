@@ -122,7 +122,7 @@ session_start();
                         <input type="text" name="fathersname" class="form-control" placeholder="Πατρώνυμο" required />
                     </div>
                     <div class="form-outline mb-4">
-                        <input type="text" name="mothersname" class="form-control" placeholder="Μυτρώνυμο" required />
+                        <input type="text" name="mothersname" class="form-control" placeholder="Μητρώνυμο" required />
                     </div>
                     <label for="inputaddressstreet" class="col col-form-label">Διεύθηνση Κατοικίας</label>
                     <div class="row mb-4">
@@ -152,7 +152,7 @@ session_start();
                     <label for="inputsurnmae" class="col col-form-label"> Στοιχεία Επικοινωνίας</label>
                     <!-- Email input -->
                     <div class="form-outline mb-4">
-                        <input type="email" name="email" class="form-control" placeholder="Διεύθηνση e-mail" required />
+                        <input type="email" name="email" class="form-control" placeholder="Διεύθυνση e-mail" required />
                     </div>
                     <div class="form-outline mb-4">
                         <input type="text" name="telephone" class="form-control" placeholder="Τηλέφωνο Επικοινωνίας" required />

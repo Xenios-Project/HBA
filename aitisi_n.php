@@ -143,7 +143,7 @@
                     <label for="visitor_email" class="col col-form-label"> Στοιχεία Επικοινωνίας</label>
                     <!-- Email input -->
                     <div class="form-outline mb-4">
-                        <input type="email" name="visitor_email" class="form-control" placeholder="Διεύθηνση e-mail" required />
+                        <input type="email" name="visitor_email" class="form-control" placeholder="Διεύθυνση e-mail" required />
                     </div>
                     <div class="form-outline mb-4">
                         <input type="text" name="telephone" class="form-control" placeholder="Τηλέφωνο Επικοινωνίας" required />
