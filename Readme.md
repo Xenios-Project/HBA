@@ -4,4 +4,4 @@ The source code for https://hba.org.gr/
 * Author @apostolos.gioulis
 
 ## TODO
-[ ] Remove the free-version banner. By license for Presento.
+[ ] Remove the free-version banner. Buy license for Presento.
