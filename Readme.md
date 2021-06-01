@@ -5,3 +5,4 @@ The source code for https://hba.org.gr/
 
 ## TODO
 [ ] Remove the free-version banner. Buy license for Presento.
+[ ] Create lisence. 
