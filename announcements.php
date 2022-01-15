@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-<?php session_start(); include("header.php");?>
+<?php session_start();
+include("header.php"); ?>
 
 <head>
-<link rel="import" href="header.html">
+    <link rel="import" href="header.html">
 </head>
 
-<body onload="load()"> 
+<body onload="load()">
 
     <main id="main">
 
@@ -36,11 +37,37 @@
 
                         <article class="entry">
 
+                            <div class="entry-img-latest-bba">
+                                <img src="assets/img/BAF-Logo.jpeg" alt="" class="img-fluid ds-blog-img mx-auto d-block img-fit">
+                            </div>
+                            <h2 class=" entry-title ">
+                                <a href="announcements/announcement-15-01-2022.php" data-tag="announcement-article-3-1"></a>
+                            </h2>
+
+                            <div class="entry-meta ">
+                                <ul>
+                                    <li class="d-flex align-items-center "><i class="icofont-user "></i> <a href="blog-single.html" data-tag="announcement-2"></a></li>
+                                    <li class="d-flex align-items-center "><i class="icofont-wall-clock "></i> <a href="blog-single.html "><time datetime="20-05-2020" data-tag="announcement-article-3-6"></time></a></li>
+                                </ul>
+                            </div>
+
+                            <div class="entry-content ">
+                                <p data-tag="announcement-article-3-3"></p>
+                                <div class="read-more ">
+                                    <a href="announcements/announcement-15-01-2022.php">Read More</a>
+                                </div>
+                            </div>
+
+                        </article>
+                        <!-- End blog entry -->
+
+                        <article class="entry">
+
                             <div class="entry-img-latest">
                                 <img src="assets/img/logo4.png" alt="" class="img-fluid ds-blog-img mx-auto d-block">
                             </div>
                             <h2 class=" entry-title ">
-                                <a href="announcments/announcment-20-05-2020.php" data-tag="announcement-article-2-1"></a>
+                                <a href="announcements/announcement-20-05-2020.php" data-tag="announcement-article-2-1"></a>
                             </h2>
 
                             <div class="entry-meta ">
@@ -53,7 +80,7 @@
                             <div class="entry-content ">
                                 <p data-tag="announcement-article-2-3"></p>
                                 <div class="read-more ">
-                                    <a href="announcments/announcment-20-05-2020.php">Read More</a>
+                                    <a href="announcements/announcement-20-05-2020.php">Read More</a>
                                 </div>
                             </div>
 
@@ -66,7 +93,7 @@
                                 <img src="assets/img/logo4.png" alt="" class="img-fluid ds-blog-img mx-auto d-block">
                             </div>
                             <h2 class=" entry-title ">
-                                <a href="announcments/announcment-24-07-2019.php" data-tag="announcement-article-1-1"></a>
+                                <a href="announcements/announcement-24-07-2019.php" data-tag="announcement-article-1-1"></a>
                             </h2>
 
                             <div class="entry-meta ">
@@ -77,15 +104,16 @@
                             </div>
 
                             <div class="entry-content ">
-                                <p> <div data-tag="announcement-article-1-2"></div><br/>
-                                    <ul class="list-unstyled">
-                                        <li class="padded-list" data-tag="announcement-article-1-3"></li>
-                                        <li class="padded-list" data-tag="announcement-article-1-4"></li>
-                                        <li class="padded-list" data-tag="announcement-article-1-5"></li>
-                                    </ul>
+                                <p>
+                                <div data-tag="announcement-article-1-2"></div><br />
+                                <ul class="list-unstyled">
+                                    <li class="padded-list" data-tag="announcement-article-1-3"></li>
+                                    <li class="padded-list" data-tag="announcement-article-1-4"></li>
+                                    <li class="padded-list" data-tag="announcement-article-1-5"></li>
+                                </ul>
                                 </p>
                                 <div class="read-more ">
-                                    <a href="announcments/announcment-24-07-2019.php">Read More</a>
+                                    <a href="announcements/announcement-24-07-2019.php">Read More</a>
                                 </div>
                             </div>
 
@@ -138,7 +166,7 @@
             </div>
         </div>
     </footer>
-    <!-- End Footer --> 
+    <!-- End Footer -->
 
     <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
 

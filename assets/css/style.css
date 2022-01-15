@@ -438,6 +438,10 @@ h6 {
     background-color: #01579B;
 }
 
+.entry-img-latest-bba {
+    background-color: #FAFAFA;
+}
+
 .entry-img {
     background-color: #757575
 }
@@ -2350,4 +2354,8 @@ section {
 
 .divider {
     margin-left: 20px;
+}
+
+.img-fit {
+    object-fit: fill;
 }

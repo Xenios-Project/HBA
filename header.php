@@ -75,7 +75,7 @@
 
             <nav class="nav-menu d-none d-lg-block">
                 <ul>
-                    <li class="active"><a href="index.php#header">Home</a></li>
+                    <li class="active"><a href="/index.php#header">Home</a></li>
                     <li><a href="/index.php#about">About</a></li>
                     <li>
                         <a href="/index.php#Members" data-tag="header-1"></a>
