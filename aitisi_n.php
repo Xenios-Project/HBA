@@ -1,81 +1,10 @@
-<?php session_start(); ?>
+<?php session_start();
+include("header.php"); ?>
 
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <script type="text/javascript">
-        document.getElementById('datePicker').valueAsDate = new Date();
-    </script>
-    <script type='text/javascript'>
-        function refreshCaptcha() {
-            var img = document.images['captchaimg'];
-            img.src = img.src.substring(0, img.src.lastIndexOf("?")) + "?rand=" + Math.random() * 1000;
-        }
-    </script>
-
-    <meta charset="utf-8">
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-
-    <title>Hellenic</title>
-    <meta content="" name="description">
-    <meta content="" name="keywords">
-
-    <!-- Favicons -->
-    <link href="assets/img/favicon.png" rel="icon">
-    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
-
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
-
-    <!-- Vendor CSS Files -->
-    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
-    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-    <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
-    <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
-    <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
-    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-
-    <!-- Template Main CSS File -->
-    <link href="assets/css/style.css" rel="stylesheet">
-    <!-- <link href="assets/vendor/phpcaptcha/css/style.css" rel="stylesheet"> -->
-
-
-    <!-- =======================================================
-  * Template Name: Presento - v2.0.2
-  * Template URL: https://bootstrapmade.com/presento-bootstrap-corporate-template/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
-</head>
-
-<body>
-    <!-- ======= Header ======= -->
-    <header id="header" class="fixed-top">
-        <div class="container d-flex align-items-center">
-            <h1 class="logo mr-auto">
-                <a href="index.php"><img src="assets/img/logo-square.png"> HBA<span>.</span></a>
-            </h1>
-            <!-- Uncomment below if you prefer to use an image logo -->
-            <!-- <a href="index.html" class="logo mr-auto"><img src="assets/img/logo.png" alt=""></a>-->
-
-            <nav class="nav-menu d-none d-lg-block">
-                <ul>
-                    <li><a href="index.php#header">Home</a></li>
-                    <li><a href="index.php#about">About</a></li>
-                    <li><a href="index.php#Members">Μέλη</a></li>
-                    <li class="active"><a href="index.php#New-Member">Εγγραφή</a></li>
-                    <li><a href="index.php#Goals">Στόχοι</a></li>
-                    <li><a href="announcements.html">Ανακοινώσεις</a></li>
-                </ul>
-            </nav>
-            <!-- .nav-menu -->
-
-            <a href="index.php#contact" class="get-started-btn scrollto">Contact</a>
-        </div>
-    </header>
-    <!-- End Header -->
+<body onload="load()">
     <?php
     if ($_GET['msg'] == 'captcha_incorect') {
         $msg = 'Η δοθείσα λύση του CAPTCHA δεν ήτανε σωστή, παρακαλώ ξανα προσπαθήστε.';
@@ -168,15 +97,15 @@
                         <input type="date" name="date" value="<?php echo date('Y-m-d'); ?>" />
                     </p>
                     <p>
-                        <div class="container">
-                            <div class="d-flex flex-row">
-                                <div class="p-2">Ο/Η ΑΙΤ</div>
-                                <div class="p-2"> <select class="form-control">
-                                        <option>ΩΝ</option>
-                                        <option>ΟΥΣΑ</option>
-                                    </select></div>
-                            </div>
+                    <div class="container">
+                        <div class="d-flex flex-row">
+                            <div class="p-2">Ο/Η ΑΙΤ</div>
+                            <div class="p-2"> <select class="form-control">
+                                    <option>ΩΝ</option>
+                                    <option>ΟΥΣΑ</option>
+                                </select></div>
                         </div>
+                    </div>
                     </p>
                     <br>
                     <div class="form-outline mb-4">
@@ -188,19 +117,17 @@
                         <img class="img-responsive" src="assets/vendor/phpcaptcha/captcha.php?rand=<?php echo rand(); ?>" id='captchaimg'>
                         <div class="row">
                             <div class="col">
-                                <label for="inputsurnmae" class="col col-form-label">Εισάγετε τον κωδικό της παραπάνω εικόνας:</label>
+                                <label for="inputsurnmae" class="col col-form-label" data-tag="contact-6"></label>
                             </div>
                             <div class="w-100"></div>
                             <div class="form-outline col-5">
-                                <input type="captcha_code" id="captcha_code" name="captcha_code" class="form-control" placeholder="Κωδικός CAPTCHA." required />
+                                <input type="captcha_code" id="captcha_code" name="captcha_code" class="form-control" placeholder="CAPTCHA." required />
                             </div>
                         </div>
-                        <small class="text-muted">
-                            Εικόνα δυσανάγνωστη? Πατήστε <a href='javascript: refreshCaptcha();'>εδώ</a> για ανανέωση.
-                        </small>
+                        <small class="text-muted" data-tag="contact-7"></small>
                     </div>
                     <!-- Submit button -->
-                    <button type="submit" class="btn-submit-form">Αποστολή Αίτησεως</button>
+                    <button type="submit" class="btn-submit-form" data-tag="contact-8"></button>
                 </form>
             </div>
         </section>
@@ -226,11 +153,11 @@
                 </div>
             </div>
             <div class="social-links text-center text-md-right pt-3 pt-md-0">
-                <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-                <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-                <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-                <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
-                <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+                <!-- <a href="#" class="twitter" target="_blank"><i class="bx bxl-twitter"></i></a>  -->
+                <a href="https://www.facebook.com/HBA.ORG.GR/" class="facebook" target="_blank"><i class="bx bxl-facebook"></i></a>
+                <!-- <a href="#" class="instagram"><i class="bx bxl-instagram" target="_blank"></i></a> -->
+                <!-- <a href="#" class="google-plus"><i class="bx bxl-skype" target="_blank"></i></a> -->
+                <a href="https://www.linkedin.com/company/26202501" class="linkedin" target="_blank"><i class="bx bxl-linkedin"></i></a>
             </div>
         </div>
     </footer>

@@ -1,70 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+<?php session_start(); include("header.php");?>
 
 <head>
-    <meta charset="utf-8">
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-
-    <title>Blog - Presento Bootstrap Template</title>
-    <meta content="" name="description">
-    <meta content="" name="keywords">
-
-    <!-- Favicons -->
-    <link href="assets/img/favicon.png" rel="icon">
-    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
-
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
-
-    <!-- Vendor CSS Files -->
-    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
-    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-    <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
-    <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
-    <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
-    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-
-    <!-- Template Main CSS File -->
-    <link href="assets/css/style.css" rel="stylesheet">
-
-    <!-- =======================================================
-  * Template Name: Presento - v2.0.2
-  * Template URL: https://bootstrapmade.com/presento-bootstrap-corporate-template/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
+<link rel="import" href="header.html">
 </head>
 
-<body>
-
-    <!-- ======= Header ======= -->
-    <header id="header" class="fixed-top">
-        <div class="container d-flex align-items-center">
-            <h1 class="logo mr-auto">
-                <a href="index.php"><img src="assets/img/logo-square.png"> HBA<span>.</span></a>
-            </h1>
-            <!-- Uncomment below if you prefer to use an image logo -->
-            <!-- <a href="index.php" class="logo mr-auto"><img src="assets/img/logo.png" alt=""></a>-->
-
-            <nav class="nav-menu d-none d-lg-block">
-                <ul>
-                    <li><a href="index.php#header">Home</a></li>
-                    <li><a href="index.php#about">About</a></li>
-                    <li><a href="index.php#Members">Μέλη</a></li>
-                    <li><a href="index.php#New-Member">Εγγραφή</a></li>
-                    <li><a href="index.php#Goals">Στόχοι</a></li>
-                    <li class="active"><a href="announcements.html">Ανακοινώσεις</a></li>
-                </ul>
-            </nav>
-            <!-- .nav-menu -->
-
-            <a href="index.php#contact" class="get-started-btn scrollto">Contact</a>
-        </div>
-    </header>
-    <!-- End Header -->
+<body onload="load()"> 
 
     <main id="main">
+
+
 
         <!-- ======= Breadcrumbs ======= -->
         <section class="breadcrumbs">
@@ -72,9 +18,9 @@
 
                 <ol>
                     <li><a href="index.php">Home</a></li>
-                    <li>Ανακοινώσεις</li>
+                    <li data-tag="announcement-1"></li>
                 </ol>
-                <h2>Ανακοινώσεις</h2>
+                <h2 data-tag="announcement-1"></h2>
 
             </div>
         </section>
@@ -93,24 +39,21 @@
                             <div class="entry-img-latest">
                                 <img src="assets/img/logo4.png" alt="" class="img-fluid ds-blog-img mx-auto d-block">
                             </div>
-
                             <h2 class=" entry-title ">
-                                <a href="announcments/announcment-20-05-2020.html">Ανακοίνωση Νέου Δ.Σ.</a>
+                                <a href="announcments/announcment-20-05-2020.php" data-tag="announcement-article-2-1"></a>
                             </h2>
 
                             <div class="entry-meta ">
                                 <ul>
-                                    <li class="d-flex align-items-center "><i class="icofont-user "></i> <a href="blog-single.html ">HBΑ Ανακοίνωση</a></li>
-                                    <li class="d-flex align-items-center "><i class="icofont-wall-clock "></i> <a href="blog-single.html "><time datetime="20-05-2020 ">Μάιος 20, 2020</time></a></li>
+                                    <li class="d-flex align-items-center "><i class="icofont-user "></i> <a href="blog-single.html" data-tag="announcement-2"></a></li>
+                                    <li class="d-flex align-items-center "><i class="icofont-wall-clock "></i> <a href="blog-single.html "><time datetime="20-05-2020" data-tag="announcement-article-2-2"></time></a></li>
                                 </ul>
                             </div>
 
                             <div class="entry-content ">
-                                <p>
-                                    Το νέο Διοικητικό Συμβούλιο που προέκυψε μετά την αποπομπή του Νικόλαου Κακανιάρη από το σύλλογο λόγω πλήρους ανεπάρκειας και αδιαφορίας για το σύλλογο και τις δραστηριότητες του και μετά από ομόφωνη ψηφοφορία των μελών του Δ.Σ. έχει ως εξής:
-                                </p>
+                                <p data-tag="announcement-article-2-3"></p>
                                 <div class="read-more ">
-                                    <a href="announcments/announcment-20-05-2020.html">Read More</a>
+                                    <a href="announcments/announcment-20-05-2020.php">Read More</a>
                                 </div>
                             </div>
 
@@ -122,30 +65,27 @@
                             <div class="entry-img ">
                                 <img src="assets/img/logo4.png" alt="" class="img-fluid ds-blog-img mx-auto d-block">
                             </div>
-
                             <h2 class=" entry-title ">
-                                <a href="announcments/announcment-24-07-2019.html">Ανακοίνωση Νέου Δ.Σ.</a>
+                                <a href="announcments/announcment-24-07-2019.php" data-tag="announcement-article-1-1"></a>
                             </h2>
 
                             <div class="entry-meta ">
                                 <ul>
-                                    <li class="d-flex align-items-center "><i class="icofont-user "></i> <a href="blog-single.html ">HBΑ Ανακοίνωση</a></li>
-                                    <li class="d-flex align-items-center "><i class="icofont-wall-clock "></i> <a href="blog-single.html "><time datetime="24-07-2019 ">Ιούλιος 24, 2019</time></a></li>
-                                    <!-- <li class="d-flex align-items-center "><i class="icofont-comment "></i> <a href="blog-single.html ">12 Comments</a></li> -->
+                                    <li class="d-flex align-items-center "><i class="icofont-user "></i> <a href="blog-single.html " data-tag="announcement-2"></a></li>
+                                    <li class="d-flex align-items-center "><i class="icofont-wall-clock "></i> <a href="blog-single.html "><time datetime="24-07-2019 " data-tag="announcement-article-1-1"></time></a></li>
                                 </ul>
                             </div>
 
                             <div class="entry-content ">
-                                <p>
-                                    Το νέο Διοικητικό Συμβούλιο που προέκυψε από τις εκλογές της 24ης Ιουλίου 2019 έχει ως εξής:
+                                <p> <div data-tag="announcement-article-1-2"></div><br/>
                                     <ul class="list-unstyled">
-                                        <li class="padded-list"><strong>Πρόεδρος</strong> : Πούλα Ειρήνη Χρυσοβαλάντου</li>
-                                        <li class="padded-list"><strong>Γραμματέας</strong>: Καφούρος Εμμανουήλ</li>
-                                        <li class="padded-list"><strong>Ταμείας</strong>: Πούλα Ασημίνα</li>
+                                        <li class="padded-list" data-tag="announcement-article-1-3"></li>
+                                        <li class="padded-list" data-tag="announcement-article-1-4"></li>
+                                        <li class="padded-list" data-tag="announcement-article-1-5"></li>
                                     </ul>
                                 </p>
                                 <div class="read-more ">
-                                    <a href="announcments/announcment-24-07-2019.html">Read More</a>
+                                    <a href="announcments/announcment-24-07-2019.php">Read More</a>
                                 </div>
                             </div>
 
@@ -190,15 +130,15 @@
                 </div>
             </div>
             <div class="social-links text-center text-md-right pt-3 pt-md-0">
-                <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-                <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-                <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-                <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
-                <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+                <!-- <a href="#" class="twitter" target="_blank"><i class="bx bxl-twitter"></i></a>  -->
+                <a href="https://www.facebook.com/HBA.ORG.GR/" class="facebook" target="_blank"><i class="bx bxl-facebook"></i></a>
+                <!-- <a href="#" class="instagram"><i class="bx bxl-instagram" target="_blank"></i></a> -->
+                <!-- <a href="#" class="google-plus"><i class="bx bxl-skype" target="_blank"></i></a> -->
+                <a href="https://www.linkedin.com/company/26202501" class="linkedin" target="_blank"><i class="bx bxl-linkedin"></i></a>
             </div>
         </div>
     </footer>
-    <!-- End Footer -->
+    <!-- End Footer --> 
 
     <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
 
