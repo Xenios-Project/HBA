@@ -22,19 +22,17 @@ include("header.php"); ?>
         <section id="Members" class="Section-Text section-bg ">
             <div class="col-md-6 container" data-aos="fade-up">
                 <div class="text-center">
-                    <h2>ΠΑΝΕΛΛΗΝΙΟΣ ΣΥΛΛΟΓΟΣ BLOCKCHAIN</h2><br>
-                    <h6> ANAΓΝΩΡΙΣΜΕΝΟ ΣΩΜΑΤΕΙΟ (ΑΠΟΦΑΣΗ ΕΙΡΗΝΟΔΙΚΕΙΟΥ ΝΕΑΣ ΙΩΝΙΑΣ: 13/2019)<br>
-                        <small class="text-muted">Πάρνηθος 1 & Γκινοσάτη – Δήμος Μεταμορφώσεως Αττικής – Τ.Κ. 14452, 211 1161832, info@hba.org.gr</small>
+                    <h2 data-tag="form-f-1"></h2><br>
+                    <h6> <div data-tag="form-f-2" style="margin: 0;padding:0;"></div><br>
+                        <small class="text-muted" data-tag="form-f-3"></small>
                     </h6><br><br>
-                    <h4>
-                        ΑΙΤΗΣΗ ΕΓΓΡΑΦΗΣ ΜΕΛΟΥΣ
-                    </h4><br>
+                    <h4 data-tag="form-f-4"></h4><br>
                 </div>
-                <p>Κύριες και Κύριοι,</p>
-                <p> Σας παρακαλώ να με εγγράψετε ως μέλος του σωματείου με την επωνυμία «ΠΑΝΕΛΛΗΝΙΟΣ ΣΥΛΛΟΓΟΣ BLOCKCHAIN»</p>
-                <form name="aitisi_f" action="emailer.php" method="post" role="form" class="php-email-form">
+                <p data-tag="form-f-5"></p>
+                <p data-tag="form-f-6"></p>
+                <form name="aitisi_n" action="emailer.php" method="post" role="form" class="php-email-form">
                     <!-- 2 column grid layout with text inputs for the first and last names -->
-                    <label for="inputsurnmae" class="col col-form-label"> Στοιχεία</label>
+                    <label for="company" class="col col-form-label" data-tag="form-f-7"></label>
                     <div class="form-outline mb-4">
                         <input type="text" name="company" class="form-control" placeholder="Επωνυμία" required />
                     </div>
@@ -96,17 +94,7 @@ include("header.php"); ?>
                         Ημερομηνία:
                         <input type="date" name="date" value="<?php echo date('Y-m-d'); ?>" />
                     </p>
-                    <p>
-                    <div class="container">
-                        <div class="d-flex flex-row">
-                            <div class="p-2">Ο/Η ΑΙΤ</div>
-                            <div class="p-2"> <select class="form-control">
-                                    <option>ΩΝ</option>
-                                    <option>ΟΥΣΑ</option>
-                                </select></div>
-                        </div>
-                    </div>
-                    </p>
+                    <p data-tag="form-f-14"></p>
                     <br>
                     <div class="form-outline mb-4">
                         <input type="text" name="inputsignature" class="form-control" placeholder="Υπογραφή (Πλήρες Ονοματεπώνημο)" required />

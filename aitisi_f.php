@@ -22,19 +22,17 @@ include("header.php"); ?>
         <section id="Members" class="Section-Text section-bg ">
             <div class="col-md-6 container" data-aos="fade-up">
                 <div class="text-center">
-                    <h2>ΠΑΝΕΛΛΗΝΙΟΣ ΣΥΛΛΟΓΟΣ BLOCKCHAIN</h2><br>
-                    <h6> ANAΓΝΩΡΙΣΜΕΝΟ ΣΩΜΑΤΕΙΟ (ΑΠΟΦΑΣΗ ΕΙΡΗΝΟΔΙΚΕΙΟΥ ΝΕΑΣ ΙΩΝΙΑΣ: 13/2019)<br>
-                        <small class="text-muted">Πάρνηθος 1 & Γκινοσάτη – Δήμος Μεταμορφώσεως Αττικής – Τ.Κ. 14452, 211 1161832, info@hba.org.gr</small>
+                    <h2 data-tag="form-f-1"></h2><br>
+                    <h6> <div data-tag="form-f-2" style="margin: 0;padding:0;"></div><br>
+                        <small class="text-muted" data-tag="form-f-3"></small>
                     </h6><br><br>
-                    <h4>
-                        ΑΙΤΗΣΗ ΕΓΓΡΑΦΗΣ ΜΕΛΟΥΣ
-                    </h4><br>
+                    <h4 data-tag="form-f-4"></h4><br>
                 </div>
-                <p>Κύριες και Κύριοι,</p>
-                <p> Σας παρακαλώ να με εγγράψετε ως μέλος του σωματείου με την επωνυμία «ΠΑΝΕΛΛΗΝΙΟΣ ΣΥΛΛΟΓΟΣ BLOCKCHAIN»</p>
+                <p data-tag="form-f-5"></p>
+                <p data-tag="form-f-6"></p>
                 <form name="aitisi_f" method="post" action="emailer.php">
                     <!-- 2 column grid layout with text inputs for the first and last names -->
-                    <label for="inputsurnmae" class="col col-form-label"> Στοιχεία</label>
+                    <label for="inputsurnmae" class="col col-form-label" data-tag="form-f-7"></label>
                     <div class="row mb-4">
                         <div class="col">
                             <div class="form-outline">
@@ -53,7 +51,7 @@ include("header.php"); ?>
                     <div class="form-outline mb-4">
                         <input type="text" name="mothersname" class="form-control" placeholder="Μητρώνυμο" required />
                     </div>
-                    <label for="inputaddressstreet" class="col col-form-label">Διεύθηνση Κατοικίας</label>
+                    <label for="inputaddressstreet" class="col col-form-label" data-tag="form-f-8"></label>
                     <div class="row mb-4">
                         <div class="col">
                             <div class="form-outline">
@@ -78,7 +76,7 @@ include("header.php"); ?>
                             </div>
                         </div>
                     </div>
-                    <label for="inputsurnmae" class="col col-form-label"> Στοιχεία Επικοινωνίας</label>
+                    <label for="inputsurnmae" class="col col-form-label" data-tag="form-f-9"></label>
                     <!-- Email input -->
                     <div class="form-outline mb-4">
                         <input type="email" name="email" class="form-control" placeholder="Διεύθυνση e-mail" required />
@@ -87,32 +85,17 @@ include("header.php"); ?>
                         <input type="text" name="telephone" class="form-control" placeholder="Τηλέφωνο Επικοινωνίας" required />
                     </div>
                     <p>
-                        <small class="text-muted">
-                            Βάσει του νέου Ευρωπαϊκού κανονισμού περί προστασίας προσωπικών δεδομένων (General Data Protection Regulation) που ισχύει από τις 25/05/2018, οφείλουμε να διατηρούμε τη γραπτή συγκατάθεση σας ως προς τη συλλογή και επεξεργασία των στοιχείων σας, με σκοπό
-                            την πραγματοποίηση των σκοπών του σωματείου, την άμεση ενημέρωση σας για την λειτουργία του σωματείου, καθώς και να απολαμβάνετε υπηρεσίες πρόσβασης στο σωματείο μας. Διατηρείτε πάντοτε το δικαίωμα να ανακαλέσετε την συγκατάθεση
-                            σας ανά πάσα στιγμή.
-                        </small>
+                        <small class="text-muted" data-tag="form-f-10"></small>
                     </p>
-                    <p>
-                        Παρακαλώ να με γράψετε στα μητρώα σας, ως μέλος του σωματείου.</p>
-                    <p>Δηλώνω, επίσης, ότι αποδέχομαι ανεπιφύλακτα τις διατάξεις του Καταστατικού του Σωματείου.</p>
+                    <p data-tag="form-f-11"></p>
+                    <p data-tag="form-f-12"></p>
                     </p>
                     <br>
                     <p>
-                        Ημερομηνία:
+                        <div data-tag="form-f-13" style="display:inline;"></div>
                         <input type="date" name="date" value="<?php echo date('Y-m-d'); ?>" required />
                     </p>
-                    <p>
-                    <div class="container">
-                        <div class="d-flex flex-row">
-                            <div class="p-2">Ο/Η ΑΙΤ</div>
-                            <div class="p-2"> <select class="form-control">
-                                    <option>ΩΝ</option>
-                                    <option>ΟΥΣΑ</option>
-                                </select></div>
-                        </div>
-                    </div>
-                    </p>
+                    <p data-tag="form-f-14"></p>
                     <br>
                     <div class="form-outline mb-4">
                         <input type="text" id="inputsignature" name="inputsignature" class="form-control" placeholder="Υπογραφή (Πλήρες Ονοματεπώνημο)" required />
