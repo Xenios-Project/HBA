@@ -81,23 +81,23 @@
                             <div class="row">
                                 <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="100">
                                     <i class="bx bx-cube-alt"></i>
-                                    <h4>Independent</h4>
-                                    <p>The blockchain technology allows for verification without having to be dependent on third-parties.</p>
+                                    <h4 data-tag="blockchain-box-1"></h4>
+                                    <p data-tag="blockchain-box-2"></p>
                                 </div>
                                 <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="200">
                                     <i class="bx bx-shield"></i>
-                                    <h4>Secure</h4>
-                                    <p>Blockchain uses protected cryptography to secure the data ledgers.</p>
+                                    <h4 data-tag="blockchain-box-3"></h4>
+                                    <p data-tag="blockchain-box-4"></p>
                                 </div>
                                 <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="300">
                                     <i class="bx bx-images"></i>
-                                    <h4>Transparent</h4>
-                                    <p>All the blockchain transactions and data are attached to the block after the process of maximum trust verification. There is a consensus of all the ledger participants on what is to be recorded in the block.</p>
+                                    <h4 data-tag="blockchain-box-5"></h4>
+                                    <p data-tag="blockchain-box-6"></p>
                                 </div>
                                 <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="400">
                                     <i class="bx bx-fingerprint"></i>
-                                    <h4>Verifiable</h4>
-                                    <p>The origin of any blockchain ledger can be tracked along the chain to its point of origin.</p>
+                                    <h4 data-tag="blockchain-box-7"></h4>
+                                    <p data-tag="blockchain-box-8"></p>
                                 </div>
                             </div>
                         </div>
