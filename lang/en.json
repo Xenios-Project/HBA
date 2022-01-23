@@ -1,111 +1,221 @@
 {
+
     "lang": "GR",
+
     "header-1": "Members",
+
     "header-2": "Join",
+
     "header-3": "Goals",
+
     "header-4": "Announcements",
-    "header-5": "Education",
+
+    "header-5": "Education/Training",
+
     "header-6": "Contact",
+
+    "intro-1": "A FEW WORDS",
+
     "welcome-1": "Welcome to our official webpage.",
+
     "welcome-2": "Who we are",
-    "intro-1": "A few words",
-    "intro-2": "Hellenic Blockchain Association is a not for profit private law entity.",
-    "intro-3": "Hellenic Blockchain Association (ΗΒΑ) was founded on May 15th 2019 as decided by the district court of Nea Ionia, decision recognition No 13/2019, Association No of 32515, after the request was submitted by HBA members on November 16th 2018.",
+
+    "intro-2": "Hellenic Blockchain Association (HBA) is a non-profit private entity.",
+
+    "intro-3": " Hellenic Blockchain Association (ΗΒΑ) was founded on May 15th 2019 as decided by the district court of Nea Ionia, decision recognition No 13/2019, Association No of 32515, following the request submitted by HBA members on November 16th 2018.",
+
     "blockchain-box-1": "Independent",
+
     "blockchain-box-2": "The blockchain technology allows for verification without having to be dependent on third-parties.",
+
     "blockchain-box-3": "Secure",
+
     "blockchain-box-4": "Blockchain uses protected cryptography to secure the data ledgers.",
+
     "blockchain-box-5": "Transparent",
+
     "blockchain-box-6": "All the blockchain transactions and data are attached to the block after the process of maximum trust verification. There is a consensus of all the ledger participants on what is to be recorded in the block.",
+
     "blockchain-box-7": "Verifiable",
+
     "blockchain-box-8": "The origin of any blockchain ledger can be tracked along the chain to its point of origin.",
-    "members-1": "Every legal and natural person can join the Association as member regardless of their gender, sex, race, nationality, political or religious beliefs.",
-    "members-2": "Every legal and natural person can join the Association, after a written petition (physical or electronic), provided they embrace the pursuits and goals of the Association and wish to assist in their materialisation. The petition assumes the unequivocal acceptance of the stipulation of the Associations manifest. ",
-    "members-3": "Τα μέλη του Σωματείου διακρίνονται σε τακτικά, αρωγά και επίτιμα μέλη:",
-    "members-4": "Τακτικά μέλη μπορούν να γίνουν μόνο όσοι διακρίνονται για το ενδιαφέρον τους και την ενεργοποίησή τους στην ευόδωση των σκοπών του Σωματείου. Τα τακτικά μέλη έχουν δικαίωμα να εκλέγουν και να εκλέγονται, να ψηφίζουν και να παρίστανται στις τακτικές και έκτακτες Γενικές Συνελεύσεις του Σωματείου. Έχουν το δικαίωμα επίσης να προτείνουν οτιδήποτε κρίνουν πως συντελεί στην εκπλήρωση των σκοπών του Σωματείου με έγγραφη ή προφορική πρότασή τους προς τα όργανα της διοίκησης.",
-    "members-5": "Αρωγά μέλη μπορούν να γίνουν όσοι επιζητούν να συμβάλλουν στην πραγμάτωση των παραπάνω σκοπών με υλικοτεχνική, χρηματική ή άλλου είδους προσφορά.Τα αρωγά μέλη δεν έχουν δικαίωμα να εκλέγουν και να εκλέγονται ούτε δικαιούνται να παρίστανται στις τακτικές και έκτακτες Γενικές Συνελεύσεις του Σωματείου.",
-    "members-6": "Επίτιμα μέλη δύνανται να γίνουν, κατόπιν αποφάσεως του Διοικητικού Συμβουλίου, πρόσωπα νομικά ή φυσικά που έχουν προσφέρει πολύτιμες υπηρεσίες στην επίτευξη των σκοπών του Σωματείου. Τα Επίτιμα μέλη δεν έχουν δικαίωμα να εκλέγουν και να εκλέγονται ούτε να παρίστανται στις τακτικές και έκτακτες Γενικές Συνελεύσεις του Σωματείου.",
-    "members-7": "Διευκρινίζεται ότι δικαίωμα να εκλέγουν και να εκλέγονται έχουν όσα τακτικά μέλη έχουν εκπληρωμένες τις οικονομικές υποχρεώσεις τους προς το Σωματείο και συμβάλλουν ενεργά στην ευόδωση των σκοπών του Σωματείου.",
-    "members-8": "Τα νομικά πρόσωπα που είναι μέλη του Σωματείου πρέπει να εκπροσωπούνται στο Σωματείο από τον Πρόεδρο του Διοικητικού τους Συμβουλίου ή τον Διευθύνοντα Σύμβουλο ή άλλο στέλεχος τους.",
-    "members-9": "Με απόφασή του το Διοικητικό Συμβούλιο, κατόπιν συμφωνίας του μέλους και εφόσον πληρούνται οι προϋποθέσεις, μπορεί να αποφασίσει το τακτικό, αρωγό ή επίτιμο μέλος να ενταχθεί σε άλλη κατηγορία μέλους (τακτικό, αρωγό ή επίτιμο).",
-    "members-10": "The membership fee for the members is yearly. The membership fee of regular members ammounts to €60 per anum whereas patron members fee amounts to €120.",
+
+    "members-1": "Every legal and natural person can become a member of the Association regardless of their gender, sex, race, nationality, political or religious beliefs.",
+
+    "members-2": " Every legal and natural person can join the Association following a written application (physical or electronic), provided they embrace the pursuits and goals of the Association and wish to assist in their attainment. The application assumes the unequivocal acceptance of the stipulations of the Association’s official statute.",
+
+    "members-3": "The members of the Association are distinguished into regular members, associate members and honorary members:",
+
+    "members-4": "To become a regular member one must be distinguished by their interest and activities in the pursuit of the Association’s goals. Regular members have the right to elect and be elected, to vote and to attend the regular and emergency General Assemblies of the Association. They also have the right to propose anything they deem would contribute to the fulfilment of the Association’s objectives through a written or oral proposal to the administrative bodies/board.",
+
+    "members-5": "To become an associate member one must seek to promote the realization/attainment of the above goals through logistical, monetary or other contributions. Associate members do not have the right to elect or be elected, nor do they have the right to attend the regular and emergency General Assemblies of the Association ",
+
+    "members-6": "To become an honorary member, following a decision of the Board of Directors, a physical or legal person must have promoted the realization of the Association’s objectives through notable contributions. Honorary members do not have the right to elect or be elected, nor do they have the right to attend the regular and emergency General Assemblies of the Association.",
+
+    "members-7": "It is clarified that the right to elect and be elected is reserved only for regular members who have fulfilled their financial obligations to the Association and actively contribute το the attainment of the Association’s objectives.",
+
+    "members-8": "Legal persons that are members of the Association must be represented in the Association by the Chairman of their Board or their CEO or another executive.",
+
+    "members-9": "By decision of the Board of Directors, following the member’s agreement and if the abovementioned conditions are met, a regular, associate or honorary member could join a different membership category (regular, associate or honorary).",
+
+    "members-10": "Membership is annual. The fee for regular membership is €60 per annum, while the fee for associate membership is €120.",
+
     "new-members-1": "How can I become a member?",
-    "new-members-2": "Μέλος του Σωματείου μπορεί να γίνει μετά από αίτηση του γραπτή ή ηλεκτρονική (σε περίπτωση που αυτή διατίθεται από το Σωματείο κάθε φυσικό ή νομικό πρόσωπο, το οποίο ενστερνίζεται τις επιδιώξεις και τους σκοπούς του Σωματείου και επιθυμεί να συνδράμει στην πραγματοποίησή τους. Η αίτηση συνοδεύεται με την ανεπιφύλακτη αποδοχή των διατάξεων του καταστατικού.",
-    "new-members-4": "The process is simple: Use the relevant application form bellow. Alternatively you can download the relevant form  [ <a href=\"assets/documents/aitisi_f.docx\"> Natural Person</a> / <a href=\"assets/documents/aitisi_n.docx\"> Legal Person</a> ], print it, fill it and send it us either via post or e-mail. After its validation by the board, we will contact you either by phone or e-mail to complete the process.",
-    "new-members-5": "Application Form: Natural Person",
-    "new-members-6": "Application Form: Legal Person",
-    "goals-1": "Goals",
-    "goals-2": " Hellenic Blockchain Association is a not for profit organisation. The core values and goals behind its creation are listed bellow.",
-    "goals-3": "The study, spreading and advancement of the blockchain technology in both the public and the private sector, to the benefit of national economy and of society as a whole. ",
-    "goals-4": "The promotion of the role and the usefulness of blockchain technology can have on the national economy and the society as whole. ",
-    "goals-5": "The creation of a Greek authority, that will bring together creative people, members of the academic and research community and other entities, in order to share ideas and thoughts in regard to the applications of blockchain technology.",
-    "goals-6": "Supporting innovative initiative for the advancement of blockchain technology in both the public and the private sector for the benefit of national economy and society as a whole.",
-    "goals-7": "The advancement of blockchain technologies in economic sphere and in the society as a whole.",
-    "goals-8": "The development of research and advancement initiatives for the blockchain technology.",
-    "goals-9": "Η διενέργεια κοινωνικών δράσεων με την χρήση της εν λόγω τεχνολογίας",
-    "goals-10": "Η υλική και επιστημονική ενίσχυση πανεπιστημίων στην Ελλάδα και το εξωτερικό για την ανάπτυξη της τεχνολογίας blockchain και των εφαρμογών αυτής",
-    "goals-11": "H παροχή συμβουλών σε φυσικά ή νομικά πρόσωπα του δημοσίου ή ιδιωτικού τομέα, σε εθνικό, ευρωπαϊκό και διεθνές επίπεδο αναφορικά με την χρήση της τεχνολογίας blockchain",
-    "goals-12": "The establishment of free exchange of ideas and scientific information. ",
-    "goals-13": "The training and education of the association members in the blockchain technology and its advancement.",
-    "goals-14": "Η δημιουργία ενός επίσημου φορέα νομιμότητας και διαφάνειας σε Ελλάδα και Ευρώπη αλλά και σε διεθνές επίπεδο για τον έλεγχο, την πιστοποίηση και τη διαφάνεια προϊόντων βασισμένων σε τεχνολογία blockchain, όπως initial coin offering (ICO), cryptocurrencies, tokens & exchanges με σκοπό την προστασία των πολιτών και καταναλωτών από προϊόντα blockchain που ο σκοπός δημιουργίας τους δεν ανταποκρίνεται στην πραγματικότητα αλλά έχουν ως σκοπό την παραπλάνηση επενδυτών, καταναλωτών και δημοσίων φορέων",
-    "goals-15": "Η αξιοποίηση της παραγόμενης έρευνας για την εξέλιξη της εν λόγω τεχνολογίας και τον έλεγχο της νομιμότητας και της τήρησης των προδιαγραφών προϊόντων blockchain προς αποφυγή μη νόμιμων δραστηριοτήτων",
-    "goals-16": "The advancement and execution of any other action that is relevant to the goals of the association.",
-    "contact-1": "Contact",
-    "contact-2": "Contact us using the form bellow.",
-    "contact-3": "Where will you find us",
+
+    "new-members-2": "Association membership can be obtained following an electronic or physical application (provided the latter is available through the Association) by any natural or legal person that embraces the pursuits and goals of the Association and wishes to assist in their attainment. The application assumes the unequivocal acceptance of the stipulation of the Association’s official statute.",
+
+    "new-members-4": "The process is simple:  Use the appropriate application form found below; alternatively, you can also download it, print it and send the completed form to us via post or e-mail. Following its approval by the Board, we will contact you via phone or e-mail to complete the process. ",
+
+    "new-members-5": "Application form: Natural Person",
+
+    "new-members-6": "Application form: Legal Person",
+
+    "goals-1": "GOALS AND OBJECTIVES",
+
+    "goals-2": " The Hellenic Blockchain Association is a non-profit organization; the main objectives of the creation of the Association, as described in the official statute, are as follows:",
+
+    "goals-3": "The study, promotion and development of blockchain technology in both the public and private sector for the benefit of national economy and society. ",
+
+    "goals-4": "The promotion of the role and usefulness of blockchain technology to both national economy and society.",
+
+    "goals-5": "The creation of a Greek authority, that will bring together creative people, members of the academic and research community, as well as other forums, in order to share ideas on the applications of blockchain technology.",
+
+    "goals-6": "Supporting innovation and initiative for the advancement of blockchain technology in both the public and the private sector for the benefit of national economy and society.",
+
+    "goals-7": "The promotion of blockchain technology in both the economic and societal sphere. ",
+
+    "goals-8": "The encouragement of initiatives in the research and development of blockchain technology.",
+
+    "goals-9": "Using blockchain technology for social events and socially-meaningful activities.",
+
+    "goals-10": "The material and scientific support of academic institutions within Greece and abroad for the development of blockchain technology and its applications.",
+
+    "goals-11": "Providing advice to natural or legal persons in the public and private sector at national, European and international level, regarding the use of blockchain technology.",
+
+    "goals-12": "The establishment of free exchange of ideas and scientific information.",
+
+    "goals-13": "The training and education of the Association members in blockchain technology and its development.",
+
+    "goals-14": "The creation of an official body of legitimacy and transparency in both Greece and Europe, as well as internationally, for the control, certification and verification of products based on blockchain technology, such as initial coin offering (ICO), cryptocurrencies, tokens & exchanges in order to protect citizens and consumers from blockchain products, whose purpose of creation does not correspond to reality, but serves instead to mislead investors, consumers and public bodies.",
+
+    "goals-15": " Utilizing research for the development of this technology and the control of legitimacy and compliance with blockchain product specifications to avoid illegal activities.",
+
+    "goals-16": "The promotion and execution of any other actions that are congruent with the goals of the Association. ",
+
+    "contact-1": "CONTACT",
+
+    "contact-2": "Contact us using the form below",
+
+    "contact-3": "Where you will find us",
+
     "contact-4": " Parnithos 1, Metamorfosi 144 52, Athens ",
-    "contact-5": "Call Us",
-    "contact-6": "Enter the text of the above image ",
+
+    "contact-5": "Call us",
+
+    "contact-6": "Enter the text of the image above:",
+
     "contact-7": "Image difficult to read? Press <a href=\"javascript: refreshCaptcha();\"> here </a> to refresh.",
+
     "contact-8": "Send Form",
-    "form-f-1": "ΠΑΝΕΛΛΗΝΙΟΣ ΣΥΛΛΟΓΟΣ BLOCKCHAIN",
-    "form-f-2": "ANAΓΝΩΡΙΣΜΕΝΟ ΣΩΜΑΤΕΙΟ (ΑΠΟΦΑΣΗ ΕΙΡΗΝΟΔΙΚΕΙΟΥ ΝΕΑΣ ΙΩΝΙΑΣ: 13/2019",
-    "form-f-3": "Πάρνηθος 1 & Γκινοσάτη – Δήμος Μεταμορφώσεως Αττικής – Τ.Κ. 14452, 211 1161832, info@hba.org.gr",
-    "form-f-4": "ΑΙΤΗΣΗ ΕΓΓΡΑΦΗΣ ΜΕΛΟΥΣ",
-    "form-f-5": "Ladies and Gentlemen,",
-    "form-f-6": "Σας παρακαλώ να με εγγράψετε ως μέλος του σωματείου με την επωνυμία «ΠΑΝΕΛΛΗΝΙΟΣ ΣΥΛΛΟΓΟΣ BLOCKCHAIN»",
-    "form-f-7": "Details",
+
+    "form-f-1": "HELLENIC BLOCKCHAIN ASSOCIATION",
+
+    "form-f-2": "RECOGNIZED ASSOCIATION (AS RULED BY THE NEA IONIA DISTRICT COURT: 13/2019  ",
+
+    "form-f-3": "Parnithos 1 & Gkinosati – Metamorfosi, Athens – PC: 144 52, 211 1161832, info@hba.org.gr",
+
+    "form-f-4": "MEMBERSHIP APPLICATION",
+
+    "form-f-5": "Dear Sirs / Madams,",
+
+    "form-f-6": "I request that you register me as a member of the Association with the name “HELLENIC BLOCKCHAIN ASSOCIATION” ",
+
+    "form-f-7": "Personal Details",
+
     "form-f-8": "Home Address",
+
     "form-f-9": "Contact Details",
-    "form-f-10": "Βάσει του νέου Ευρωπαϊκού κανονισμού περί προστασίας προσωπικών δεδομένων (General Data Protection Regulation) που ισχύει από τις 25/05/2018, οφείλουμε να διατηρούμε τη γραπτή συγκατάθεση σας ως προς τη συλλογή και επεξεργασία των στοιχείων σας, με σκοπό την πραγματοποίηση των σκοπών του σωματείου, την άμεση ενημέρωση σας για την λειτουργία του σωματείου, καθώς και να απολαμβάνετε υπηρεσίες πρόσβασης στο σωματείο μας. Διατηρείτε πάντοτε το δικαίωμα να ανακαλέσετε την συγκατάθεση σας ανά πάσα στιγμή.",
-    "form-f-11": "Παρακαλώ να με γράψετε στα μητρώα σας, ως μέλος του σωματείου.",
-    "form-f-12": "Δηλώνω, επίσης, ότι αποδέχομαι ανεπιφύλακτα τις διατάξεις του Καταστατικού του Σωματείου.",
-    "form-f-13": "Ημερομηνία:",
-    "form-f-14": "Ο/Η ΑΙΤΩΝ/ΟΥΣΑ",
+
+    "form-f-10": "In accordance with the new European Regulation on personal data protection (General Data Protection Regulation) in force from 25/05/2018, we must retain your written consent to the collection and processing of your data, in order to achieve the objectives of the Association, update you regarding the operation of the Association, as well as for you to enjoy access to the services offered by the Association. You always reserve the right to revoke your consent at any time.",
+
+    "form-f-11": "I kindly request that I be registered as a member of this Association.",
+
+    "form-f-12": "I also declare that I unreservedly accept the stipulations of the statute of the Association.",
+
+    "form-f-13": "Date:",
+
+    "form-f-14": "THE APPLICANT",
+
     "announcement-1": "Announcements",
+
     "announcement-2": "HBΑ Announcement",
-    "announcement-article-1-1": "July 24, 2019",
-    "announcement-article-1-2": "The new Board of Directors as elected on the July 24th 2019 election is as follows:",
-    "announcement-article-1-3": "<strong>President</strong>: Poula Eirini Chrysovalantou",
-    "announcement-article-1-4": "<strong>Secretary</strong>: Kafouros Emmanouil",
+
+    "announcement-article-1-1": " July 24, 2019",
+
+    "announcement-article-1-2": " The new Board of Directors, as elected on July 24th 2019, is as follows:",
+
+    "announcement-article-1-3": "<strong>President</strong>: Poula Eirini Chrysovalantou ",
+
+    "announcement-article-1-4": "<strong>Secretary</strong>: Kafouros Emmanouil ",
+
     "announcement-article-1-5": "<strong>Treasurer</strong>: Poula Asimina",
-    "announcement-article-1-6": "<strong>Press & Public Relationships Director</strong>: Kakaniaris Nikolaos",
+
+    "announcement-article-1-6": "<strong>Press & Public Relations Director</strong>: Kakaniaris Nikolaos",
+
     "announcement-article-1-7": "<strong>Coordination Director</strong>: Molly Mc Adams",
+
     "announcement-article-1-8": "<strong>Member </strong>: Boulis Nikolaos",
-    "announcement-article-1-9": "<strong>1st repl. Member</strong>: Oureilidis Anastasios",
-    "announcement-article-1-10": "<strong>2nd repl. Member</strong>: Petropoulos Angelos",
-    "announcement-article-1-11": "Οι ως άνω αρμοδιότητες του Προέδρου, Γραμματέα, Ταμία, Υπεύθυνου Τύπου και Δημόσιων Σχέσεων και απλού μέλους του νέου Διοικητικού Συμβουλίου συμπίπτουν με αυτές των άρθρων 18, 19, 20, 21 και 22 του καταστατικού του σωματείου.",
-    "announcement-article-1-12": "The term of the new BOD is for 3 years and expires on the 24th of July 2022",
+
+    "announcement-article-1-9": "<strong>1st alt. Member</strong>: Oureilidis Anastasios",
+
+    "announcement-article-1-10": "<strong>2nd alt. Member</strong>: Petropoulos Angelos",
+
+    "announcement-article-1-11": "The above responsibilities of the President, Secretary, Treasurer, Head of Press and Public Relations and member of the new Board of Directors are in congruence with those of articles 18, 19, 20, 21 and 22 of the statute of Association.",
+
+    "announcement-article-1-12": "The term of the new BOD is 3 years and expires on 24th July 2022.",
+
     "announcement-article-1-13": "Athens, 24.07.2019",
+
     "announcement-article-1-14": "Election Result",
+
     "announcement-article-2-1": "Announcement of New BOD.",
+
     "announcement-article-2-2": "May 20, 2020",
-    "announcement-article-2-3": "Το νέο Διοικητικό Συμβούλιο που προέκυψε μετά την αποπομπή του Νικόλαου Κακανιάρη από το σύλλογο λόγω πλήρους ανεπάρκειας και αδιαφορίας για το σύλλογο και τις δραστηριότητες του και μετά από ομόφωνη ψηφοφορία των μελών του Δ.Σ. έχει ως εξής",
-    "announcement-article-2-4": "<strong>President</strong>: Poula Eirini Chrysovalantou",
+
+    "announcement-article-2-3": "The new Board of Directors that was formed following the expulsion of Nikolaos Kakaniaris from the Association for reasons of inadequacy and disregard for the Association and its activities and after a unanimous vote of the members of the Board is as follows:",
+
+    "announcement-article-2-4": "<strong>President</strong>: Poula Eirini Chrysovalantou ",
+
     "announcement-article-2-5": "<strong>Secretary</strong>: Kafouros Emmanouil",
+
     "announcement-article-2-6": "<strong>Treasurer</strong>: Poula Asimina",
+
     "announcement-article-2-7": "<strong>Press & Public Relationships Director</strong>: Panousis Tryfonas",
+
     "announcement-article-2-8": "<strong>Coordination Director</strong>: Oureilidis Anastasios",
+
     "announcement-article-2-9": "<strong>Member </strong>: Boulis Nikolaos",
-    "announcement-article-2-10": "<strong>1st repl. Member</strong>: Petropoulos Angelos",
-    "announcement-article-2-11": "Οι ως άνω αρμοδιότητες του Προέδρου, Γραμματέα, Ταμία, Υπεύθυνου Τύπου και Δημόσιων Σχέσεων και απλού μέλους του νέου Διοικητικού Συμβουλίου συμπίπτουν με αυτές των άρθρων 18, 19, 20, 21 και 22 του καταστατικού του σωματείου,",
-    "announcement-article-2-12": "The term of the current BOD expires on July 24th 2022.",
+
+    "announcement-article-2-10": "<strong>1st alt. Member</strong>: Petropoulos Angelos",
+
+    "announcement-article-2-11": "The above responsibilities of the President, Secretary, Treasurer, Head of Press and Public Relations and member of the new Board of Directors are in congruence with those of articles 18, 19, 20, 21 and 22 of the statute of Association.",
+
+    "announcement-article-2-12": "The term of the new BOD is 3 years and expires on 24th July 2022",
+
     "announcement-article-2-13": "Athens, 20.05.2020",
-    "announcement-article-2-14": "Election Result",
+
+    "announcement-article-2-14": " Election Result",
+
     "announcement-article-3-1": "HBA Representation at 'The British Blockchain Association' Event",
+
     "announcement-article-3-2": "Athens, 26.06.2021",
-    "announcement-article-3-3": "Our very own Oureilidis Anastasios, co-founder and coordination director of HBA, had the chance to represent Hellas on the inaugular global event, hosted by The British Blockchain Association®️ & Dr.Naseem Naqvi FRCP FBBA.",
-    "announcement-article-3-4": "He described it as an undoubtedly, it was a unique experience, and had the opportunity to exchange information and further build cross - border relationships on the institutional level.",
+
+    "announcement-article-3-3": "Our very own, Oureilidis Anastasios, co-founder and coordination director of HBA, had the chance to represent Hellas on the inaugural global event hosted by The British Blockchain Association®️ & Dr.Naseem Naqvi FRCP FBBA.",
+
+    "announcement-article-3-4": "He described it as an undoubtedly unique experience, and had the opportunity to exchange information and further build cross - border relationships on the institutional level.",
+
     "announcement-article-3-5": "<blockquote class=\"blockquote\"><p class=\"mb-0\">As a CoFounder of Xenios Group and Hellenic Blockchain Association as well. I would like to sincerely thank Theodoros Koukoutsas in particular, for hosting me at GX Blocks Energy S.A.premises for the event! One of the most innovative greek blockchain start - ups.</p></br><footer class=\"blockquote-footer\">Oureilidis Anastasios</footer></blockquote>",
+
     "announcement-article-3-6": "June 26, 2022"
+
 }
