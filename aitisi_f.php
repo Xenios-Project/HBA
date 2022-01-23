@@ -7,7 +7,7 @@ include("header.php"); ?>
 <body onload="load()">
     <?php
     if ($_GET['msg'] == 'captcha_incorect') {
-        $msg = 'Η δοθείσα λύση του CAPTCHA δεν ήτανε σωστή, παρακαλώ ξανα προσπαθήστε.';
+        $msg = '<div data-tag="error-captcha"></div>';
         echo '<div class="alert alert alert-danger alert-dismissible fade show" id="alert" role="alert">
         ' . $msg . '
                     <button id="btn-alert" type="button" class="close" data-dismiss="alert" aria-label="Close">
@@ -36,43 +36,43 @@ include("header.php"); ?>
                     <div class="row mb-4">
                         <div class="col">
                             <div class="form-outline">
-                                <input type="text" name="name" class="form-control" placeholder="Όνομα" required />
+                                <input type="text" name="name" class="form-control" placeholder="Όνομα / Given Name" required />
                             </div>
                         </div>
                         <div class="col">
                             <div class="form-outline">
-                                <input type="text" name="lastname" class="form-control" placeholder="Επώνυμο" required />
+                                <input type="text" name="lastname" class="form-control" placeholder="Επώνυμο / Surname" required />
                             </div>
                         </div>
                     </div>
                     <div class="form-outline mb-4">
-                        <input type="text" name="fathersname" class="form-control" placeholder="Πατρώνυμο" required />
+                        <input type="text" name="fathersname" class="form-control" placeholder="Πατρώνυμο / Father's Name" required />
                     </div>
                     <div class="form-outline mb-4">
-                        <input type="text" name="mothersname" class="form-control" placeholder="Μητρώνυμο" required />
+                        <input type="text" name="mothersname" class="form-control" placeholder="Μητρώνυμο / Maiden Name" required />
                     </div>
                     <label for="inputaddressstreet" class="col col-form-label" data-tag="form-f-8"></label>
                     <div class="row mb-4">
                         <div class="col">
                             <div class="form-outline">
-                                <input type="text" name="street" class="form-control" placeholder="Οδός" required />
+                                <input type="text" name="street" class="form-control" placeholder="Οδός / Street" required />
                             </div>
                         </div>
                         <div class="col-sm-4">
                             <div class="form-outline">
-                                <input type="number" name="streetno" class="form-control" placeholder="Αριθμός" required />
+                                <input type="number" name="streetno" class="form-control" placeholder="Αριθμός / Number" required />
                             </div>
                         </div>
                     </div>
                     <div class="row mb-4">
                         <div class="col">
                             <div class="form-outline">
-                                <input type="text" name="city" class="form-control" placeholder="Πόλη" required />
+                                <input type="text" name="city" class="form-control" placeholder="Πόλη / City" required />
                             </div>
                         </div>
                         <div class="col-sm-4">
                             <div class="form-outline">
-                                <input type="text" name="postalcode" class="form-control" placeholder="Τ.Κ." required />
+                                <input type="text" name="postalcode" class="form-control" placeholder="Τ.Κ. / Post Code" required />
                             </div>
                         </div>
                     </div>
@@ -82,7 +82,7 @@ include("header.php"); ?>
                         <input type="email" name="email" class="form-control" placeholder="Διεύθυνση e-mail" required />
                     </div>
                     <div class="form-outline mb-4">
-                        <input type="text" name="telephone" class="form-control" placeholder="Τηλέφωνο Επικοινωνίας" required />
+                        <input type="text" name="telephone" class="form-control" placeholder="Τηλέφωνο Επικοινωνίας / Contact Number" required />
                     </div>
                     <p>
                         <small class="text-muted" data-tag="form-f-10"></small>
@@ -98,7 +98,7 @@ include("header.php"); ?>
                     <p data-tag="form-f-14"></p>
                     <br>
                     <div class="form-outline mb-4">
-                        <input type="text" id="inputsignature" name="inputsignature" class="form-control" placeholder="Υπογραφή (Πλήρες Ονοματεπώνημο)" required />
+                        <input type="text" id="inputsignature" name="inputsignature" class="form-control" placeholder="Υπογραφή (Πλήρες Ονοματεπώνημο) / Signature (Full Name)" required />
                     </div>
                     <!-- CAPTCHA -->
                     <br>

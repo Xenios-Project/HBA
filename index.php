@@ -7,10 +7,9 @@
 </head>
 
 <body onload="load()"> 
-
     <?php
     if ($_GET['msg'] == 'success_communication') {
-        $msg = 'Ευχαριστούμε για την επικοινωνία θα σας απαντήσουμε το συντομότερο δυνατό.';
+        $msg = '<div data-tag="error-success_communication"></div>';
         echo '<div class="alert alert alert-success alert-dismissible fade show" id="alert" role="alert">
                     ' . $msg . '
                         <button id="btn-alert" type="button" class="close" data-dismiss="alert" aria-label="Close">
@@ -18,7 +17,7 @@
                         </button>
                     </div>';
     } elseif ($_GET['msg'] == 'success_subscription') {
-        $msg = 'Η Αίτηση σας έγινε αποδεχτή. Αναμένετε επικοινωνία μέσω e-mail με την επιβεβαίωση εγγραφής.';
+        $msg = '<div data-tag="error-success_subscription"></div>';
         echo '<div class="alert alert alert-success alert-dismissible fade show" id="alert" role="alert">
                 ' . $msg . '
                     <button id="btn-alert" type="button" class="close" data-dismiss="alert" aria-label="Close">
@@ -26,7 +25,7 @@
                     </button>
                 </div>';
     } elseif ($_GET['msg'] == 'fail') {
-        $msg = 'Παρουσιάστηκε τεχνικό πρόβλημα, παρακαλώ ενημερώστε μας μέσω mail ή τηλεφώνου.';
+        $msg = '<div data-tag="error-fail"></div>';
         echo '<div class="alert alert alert-danger alert-dismissible fade show" id="alert" role="alert">
         ' . $msg . '
                     <button id="btn-alert" type="button" class="close" data-dismiss="alert" aria-label="Close">
@@ -34,7 +33,7 @@
                     </button>
                 </div>';
     } elseif ($_GET['msg'] == 'captcha_incorect') {
-        $msg = 'Η δοθείσα λύση του CAPTCHA δεν ήτανε σωστή, παρακαλώ ξαναπροσπαθήστε.';
+        $msg = '<div data-tag="error-captcha"></div>';
         echo '<div class="alert alert alert-danger alert-dismissible fade show" id="alert" role="alert">
         ' . $msg . '
                     <button id="btn-alert" type="button" class="close" data-dismiss="alert" aria-label="Close">

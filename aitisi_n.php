@@ -7,7 +7,7 @@ include("header.php"); ?>
 <body onload="load()">
     <?php
     if ($_GET['msg'] == 'captcha_incorect') {
-        $msg = 'Η δοθείσα λύση του CAPTCHA δεν ήτανε σωστή, παρακαλώ ξανα προσπαθήστε.';
+        $msg = '<div data-tag="error-captcha"></div>';
         echo '<div class="alert alert alert-danger alert-dismissible fade show" id="alert" role="alert">
         ' . $msg . '
         <button id="btn-alert" type="button" class="close" data-dismiss="alert" aria-label="Close">
@@ -34,36 +34,36 @@ include("header.php"); ?>
                     <!-- 2 column grid layout with text inputs for the first and last names -->
                     <label for="company" class="col col-form-label" data-tag="form-f-7"></label>
                     <div class="form-outline mb-4">
-                        <input type="text" name="company" class="form-control" placeholder="Επωνυμία" required />
+                        <input type="text" name="company" class="form-control" placeholder="Επωνυμία / Company Name" required />
                     </div>
                     <div class="form-outline mb-4">
-                        <input type="text" name="legalrep" class="form-control" placeholder="Νομικός Εκπρόσωπος" required />
+                        <input type="text" name="legalrep" class="form-control" placeholder="Νομικός Εκπρόσωπος / Legal Representative" required />
                     </div>
                     <div class="form-outline mb-4">
-                        <input type="text" name="afm" class="form-control" placeholder="Α.Φ.Μ / Δ.Ο.Υ" required />
+                        <input type="text" name="afm" class="form-control" placeholder="Α.Φ.Μ / Δ.Ο.Υ / Tax Identification Number" required />
                     </div>
                     <label for="inputaddressstreet" class="col col-form-label">Έδρα</label>
                     <div class="row mb-4">
                         <div class="col">
                             <div class="form-outline">
-                                <input type="text" name="street" class="form-control" placeholder="Οδός" required />
+                                <input type="text" name="street" class="form-control" placeholder="Οδός / Street" required />
                             </div>
                         </div>
                         <div class="col-sm-4">
                             <div class="form-outline">
-                                <input type="text" name="streetno" class="form-control" placeholder="Αριθμός" required />
+                                <input type="text" name="streetno" class="form-control" placeholder="Αριθμός / Number" required />
                             </div>
                         </div>
                     </div>
                     <div class="row mb-4">
                         <div class="col">
                             <div class="form-outline">
-                                <input type="text" name="city" class="form-control" placeholder="Πόλη" required />
+                                <input type="text" name="city" class="form-control" placeholder="Πόλη / Ciry" required />
                             </div>
                         </div>
                         <div class="col-sm-4">
                             <div class="form-outline">
-                                <input type="text" name="postalcode" class="form-control" placeholder="Τ.Κ." required />
+                                <input type="text" name="postalcode" class="form-control" placeholder="Τ.Κ. / Postal Code" required />
                             </div>
                         </div>
                     </div>
@@ -73,21 +73,14 @@ include("header.php"); ?>
                         <input type="email" name="visitor_email" class="form-control" placeholder="Διεύθυνση e-mail" required />
                     </div>
                     <div class="form-outline mb-4">
-                        <input type="text" name="telephone" class="form-control" placeholder="Τηλέφωνο Επικοινωνίας" required />
+                        <input type="text" name="telephone" class="form-control" placeholder="Τηλέφωνο Επικοινωνίας / Contact Number" required />
                     </div>
                     <p>
-                        <small class="text-muted">
-                            Βάσει του νέου Ευρωπαϊκού κανονισμού περί προστασίας προσωπικών δεδομένων (General Data Protection Regulation) που ισχύει από τις 25/05/2018, οφείλουμε να διατηρούμε τη γραπτή συγκατάθεση σας ως προς τη συλλογή και επεξεργασία των στοιχείων σας, με σκοπό
-                            την πραγματοποίηση των σκοπών του σωματείου, την άμεση ενημέρωση σας για την λειτουργία του σωματείου, καθώς και να απολαμβάνετε υπηρεσίες πρόσβασης στο σωματείο μας. Διατηρείτε πάντοτε το δικαίωμα να ανακαλέσετε την συγκατάθεση
-                            σας ανά πάσα στιγμή.
-                        </small>
+                        <small class="text-muted" data-tag="form-f-10"></small>
                     </p>
-                    <p>
-                        Με την παρούσα αίτηση συνυποβάλλεται η νομιμοποίηση του νομίμου εκπροσώπου αναφορικά με την εκπροσώπηση του νομικού προσώπου.
-                    </p>
-                    <p>
-                        Παρακαλώ να με γράψετε στα μητρώα σας, ως μέλος του σωματείου.</p>
-                    <p>Δηλώνω, επίσης, ότι αποδέχομαι ανεπιφύλακτα τις διατάξεις του Καταστατικού του Σωματείου.</p>
+                    <p></p>
+                    <p data-tag="form-f-11"></p>
+                    <p data-tag="form-f-12"></p>
                     </p>
                     <br>
                     <p>
