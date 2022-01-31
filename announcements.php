@@ -35,6 +35,32 @@ include("header.php"); ?>
 
                     <div class="col-lg-8 entries mx-auto">
 
+                    <article class="entry">
+
+                    <div class="entry-img-latest-bba">
+                        <img src="assets/img/BAF-Logo.jpeg" alt="" class="img-fluid ds-blog-img mx-auto d-block img-fit">
+                    </div>
+                    <h2 class=" entry-title ">
+                        <a href="announcements/announcement-25-01-2022.php" data-tag="announcement-article-4-1"></a>
+                    </h2>
+
+                    <div class="entry-meta ">
+                        <ul>
+                            <li class="d-flex align-items-center "><i class="icofont-user "></i> <a href="blog-single.html" data-tag="announcement-2"></a></li>
+                            <li class="d-flex align-items-center "><i class="icofont-wall-clock "></i> <a href="blog-single.html "><time datetime="20-05-2020" data-tag="announcement-article-4-2"></time></a></li>
+                        </ul>
+                    </div>
+
+                    <div class="entry-content ">
+                        <p data-tag="announcement-article-4-3"></p>
+                        <div class="read-more ">
+                            <a href="announcements/announcement-25-01-2022.php">Read More</a>
+                        </div>
+                    </div>
+
+                    </article>
+                    <!-- End blog entry -->
+
                         <article class="entry">
 
                             <div class="entry-img-latest-bba">

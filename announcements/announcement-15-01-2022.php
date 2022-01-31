@@ -46,6 +46,7 @@ include("../header.php"); ?>
                             <p>
                             <p data-tag="announcement-article-3-3"></p>
                             <p data-tag="announcement-article-3-4"></p>
+                            <p data-tag="announcement-article-3-8"></p>
                             <p data-tag="announcement-article-3-5"></p>
                             <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
                                 <ol class="carousel-indicators">
@@ -81,7 +82,6 @@ include("../header.php"); ?>
                                 <ul class="cats">
                                     <li><a href="#" data-tag="announcement-article-3-7"></a></li>
                                 </ul>
-
                             </div>
                             <div class="float-right share">
                                 <a href="https://twitter.com/intent/tweet?url=https://hba.org.gr/announcments/announcment-24-07-2019.html&text=Hellenic Blockchain%20Association:%20Ανακοίνωση" title="Share on Twitter"><i class="icofont-twitter"></i></a>
