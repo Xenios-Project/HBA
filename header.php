@@ -20,7 +20,8 @@
                 document.cookie = "lang=en";
                 lang = "en"
             }
-            let currentLng = lang; //'fr'
+            let currentLng = lang.substring(0,2); //'fr'
+            // let currentLng = lang; //'fr'
             var translate = new Translate();
             var attributeName = 'data-tag';
             translate.init(attributeName, currentLng);
